@@ -1,7 +1,0 @@
-Micro Rooster Animations:
-
-frame 001-001: bind pose
-frame 010-049: idle
-frame 060-075: ATTACK !!
-frame 080-109: gethit
-frame 120-149: victory
