@@ -1,12 +1,16 @@
 fileFormatVersion: 2
 guid: 0d8d99c0791558944a1d9a2753fb43bf
-timeCreated: 1454176314
+timeCreated: 1454179753
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Sheep_0
+    21300000: Idle
     21300002: Sheep_1
     21300004: Sheep_2
+    21300006: Sheep_0
+    21300008: Sheep_3
+    21300010: Sheep_4
+    21300012: Sheep_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
