@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 7b4dab5da6d053046863af83d80bbf4d
+timeCreated: 1454189209
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: clouds_0
+    21300002: clouds_1
+    21300004: clouds_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: clouds_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 817
+        width: 440
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: -45}
+        - {x: 25, y: -47}
+        - {x: 29, y: -47}
+        - {x: 30, y: -46}
+        - {x: 29, y: -43}
+        - {x: 26, y: -43}
+      - - {x: -196, y: 47}
+        - {x: -220, y: 29}
+        - {x: -220, y: -6}
+        - {x: -158, y: -43}
+        - {x: -113, y: -47}
+        - {x: 166, y: -47}
+        - {x: 220, y: -11}
+        - {x: 220, y: 32}
+        - {x: 193, y: 47}
+      - - {x: -37, y: -40}
+        - {x: -36, y: -43}
+        - {x: -33, y: -43}
+        - {x: -31, y: -41}
+        - {x: -32, y: -38}
+        - {x: -35, y: -38}
+      - - {x: 92, y: -43}
+        - {x: 95, y: -42}
+        - {x: 95, y: -39}
+        - {x: 92, y: -38}
+        - {x: 90, y: -40}
+      - - {x: 85, y: -39}
+        - {x: 88, y: -38}
+        - {x: 88, y: -35}
+        - {x: 85, y: -34}
+        - {x: 83, y: -36}
+      - - {x: 180, y: -35}
+        - {x: 183, y: -34}
+        - {x: 183, y: -31}
+        - {x: 180, y: -30}
+        - {x: 178, y: -32}
+      - - {x: 159, y: -34}
+        - {x: 162, y: -33}
+        - {x: 162, y: -30}
+        - {x: 159, y: -29}
+        - {x: 157, y: -31}
+    - name: clouds_1
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 840
+        width: 310
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -131, y: 43}
+        - {x: -155, y: 19}
+        - {x: -155, y: -39}
+        - {x: -126, y: -43}
+        - {x: 155, y: -43}
+        - {x: 155, y: 43}
+    - name: clouds_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 651
+        width: 434
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 163, y: 44}
+        - {x: 71, y: 52}
+        - {x: 17, y: 62}
+        - {x: -130, y: 62}
+        - {x: -207, y: 42}
+        - {x: -217, y: 28}
+        - {x: -217, y: -8}
+        - {x: -198, y: -29}
+        - {x: -81, y: -61}
+        - {x: -71, y: -62}
+        - {x: 186, y: -62}
+        - {x: 217, y: -42}
+        - {x: 217, y: -15}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
