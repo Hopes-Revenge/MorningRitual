@@ -4,12 +4,30 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
     [Header("Setup")]
+    public Canvas canvas;
     public UIAnimateState levelWinScreen;
     public UIAnimateState levelRepeatScreen;
-    public Text timeText;
+    public GameObject[] instatiate;
 
+    private Text timeText;
     private bool hasTriggeredEnd = false;
     private float levelTime = 0;
+
+    void Awake()
+    {
+        for(int i = 0; i < instatiate.Length; i++)
+        {
+            Instantiate(instatiate[i]);
+        }
+
+        canvas = Instantiate(canvas) as Canvas;
+        levelWinScreen = Instantiate(levelWinScreen) as UIAnimateState;
+        timeText = levelWinScreen.transform.FindChild("MidPanel").GetComponentInChildren<Text>();
+        levelRepeatScreen = Instantiate(levelRepeatScreen) as UIAnimateState;
+
+        levelWinScreen.transform.SetParent(canvas.transform, false);
+        levelRepeatScreen.transform.SetParent(canvas.transform, false);
+    }
 
     void Update()
     {
