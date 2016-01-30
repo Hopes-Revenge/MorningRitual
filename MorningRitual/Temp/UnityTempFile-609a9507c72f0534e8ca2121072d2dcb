@@ -85,5 +85,6 @@ Assets/Scripts/LevelEndTrigger.cs
 Assets/Scripts/PlayerController1.cs
 Assets/Scripts/SelectBase.cs
 Assets/Scripts/TileSpriteHelper.cs
+Assets/Scripts/UI/GenerateLevels.cs
 Assets/Scripts/UI/PlayScene.cs
 Assets/Scripts/UI/UIAnimateState.cs
