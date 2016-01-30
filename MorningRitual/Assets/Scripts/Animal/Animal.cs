@@ -2,6 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(PlayerController1))]
 public class Animal : MonoBehaviour {
 
     [Header("Setup")]
@@ -11,17 +12,20 @@ public class Animal : MonoBehaviour {
     private Transform playerTransform;
     private PlayerController1 playerController;
 
+    private PlayerController1 animalController;
+
     // Use this for initialization
     protected virtual void Awake()
     {
-
+        animalController = GetComponent<PlayerController1>();
+        animalController.enabled = false;
     }
 	
 	// Update is called once per frame
 	protected virtual void Update () {
         if (isSeated)
         {
-            
+            //if(playerController)
         }
 	}
 
@@ -47,6 +51,8 @@ public class Animal : MonoBehaviour {
     {
         isSeated = true;
         playerTransform.SetParent(seatTransform, false);
+        animalController.enabled = true;
+        playerController.enabled = false;
         OnSeated();
     }
 
@@ -54,6 +60,8 @@ public class Animal : MonoBehaviour {
     {
         isSeated = false;
         playerTransform.SetParent(null, false);
+        animalController.enabled = false;
+        playerController.enabled = true;
         OnUnSeated();
     }
 
