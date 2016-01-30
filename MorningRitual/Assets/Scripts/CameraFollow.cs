@@ -28,6 +28,14 @@ public class CameraFollow : MonoBehaviour {
     {
         Vector3 pos = transform.position;
         pos.x = Mathf.Lerp(transform.position.x, followTransform.position.x, Time.fixedDeltaTime * applySpeed);
+        if (Mathf.Abs(followTransform.position.y - transform.position.y) > 1.75f)
+        {
+            pos.y = Mathf.Lerp(transform.position.y, followTransform.position.y + 1.75f, Time.fixedDeltaTime * Mathf.Abs(followTransform.position.y - transform.position.y));
+        }
+        else
+        {
+            transform.position = new Vector2(transform.position.x, followTransform.position.y + 1.75f);
+        }
         transform.position = pos;
     }
 }
