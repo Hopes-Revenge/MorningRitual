@@ -62,10 +62,7 @@ public class GridEditor : Editor
                             if (blocks[j].transform.position == down) blockOrientation -= 2;
                             if (blocks[j].transform.position == left) blockOrientation -= 4;
                             if (blocks[j].transform.position == right) blockOrientation -= 8;
-                            Debug.Log(" Block Orientation=" + blockOrientation);
                         }
-                        Debug.Log(" Block sprite=" + i + " grassSprite= " + blockOrientation);
-                        Debug.Log(" Blocks=" + blocks.Count + " grass= " + grassSprites.Length);
                         blocks[i].GetComponent<SpriteRenderer>().sprite = grassSprites[blockOrientation];
                     }
                 }
