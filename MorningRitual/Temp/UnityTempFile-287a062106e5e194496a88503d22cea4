@@ -76,6 +76,8 @@ Assets/Scripts/Animal/Animal.cs
 Assets/Scripts/Animal/Llama.cs
 Assets/Scripts/CameraFollow.cs
 Assets/Scripts/GameManager.cs
+Assets/Scripts/Grid.cs
+Assets/Scripts/GridEditor.cs
 Assets/Scripts/LevelEndTrigger.cs
 Assets/Scripts/PlayerController1.cs
 Assets/Scripts/TileSpriteHelper.cs
