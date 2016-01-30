@@ -108,6 +108,15 @@ public class PlayerController1 : MonoBehaviour {
 		}
     }
 
+    void OnDisable()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("IsJumping", false);
+            animator.SetBool("IsWalking", false);
+        }
+    }
+
 	void Flip(){
 		facingRight = !facingRight;
 		Vector3 scale = transform.localScale;

@@ -13,7 +13,8 @@ GameObject:
   - 114: {fileID: 11415130}
   - 114: {fileID: 11400624}
   - 60: {fileID: 6036612}
-  m_Layer: 11
+  - 95: {fileID: 9585394}
+  m_Layer: 10
   m_Name: Garry the Goat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +59,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.545, y: -0.237, z: 0}
+  m_LocalPosition: {x: 0.782, y: -0.888, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 464676}
@@ -84,7 +85,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.418, y: 0.625, z: 0}
+  m_LocalPosition: {x: -0.277, y: 0.438, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 435868}
@@ -120,11 +121,11 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: -0.40718913, y: 0.35250273}
-      - {x: 0.65734625, y: 0.3490683}
-      - {x: 0.67456317, y: -0.8624189}
-      - {x: -0.6745635, y: -0.869094}
-      - {x: -0.86427844, y: -0.118197605}
+    - - {x: -0.63358307, y: 0.048041582}
+      - {x: 0.8572503, y: 0.021095335}
+      - {x: 0.8220926, y: -0.95185626}
+      - {x: -0.6426039, y: -0.9702147}
+      - {x: -0.9033121, y: -0.12600446}
 --- !u!61 &6102190
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -136,9 +137,26 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0.39528346, y: 0.3961296}
+  m_Offset: {x: -0.10783732, y: 0.08776498}
   serializedVersion: 2
-  m_Size: {x: 0.60582495, y: 0.384799}
+  m_Size: {x: 0.33335337, y: 0.20524454}
+--- !u!95 &9585394
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114224}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ca183fb96ef6b324e81dc7caf02a667a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -175,7 +193,7 @@ MonoBehaviour:
   resetPosition: {x: 0, y: 0, z: 0}
   resetLevel: 0
   dead: 0
-  rdBody: {fileID: 0}
+  rdBody: {fileID: 5016630}
 --- !u!212 &21283770
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -202,8 +220,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 32b816c2510394c4099c1c4816dc611f, type: 3}
-  m_Color: {r: 0.40689635, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 67649055230311e41bf86345e8d898b4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!1001 &100100000
@@ -212,7 +230,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rdBody
+      value: 
+      objectReference: {fileID: 5016630}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 114224}
