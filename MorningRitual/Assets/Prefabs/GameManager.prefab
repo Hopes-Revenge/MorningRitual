@@ -39,8 +39,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f4e597b3b7cceb46b5afd9a42c24804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelWinScreen: {fileID: 0}
-  levelRepeatScreen: {fileID: 0}
+  canvas: {fileID: 22386052, guid: 89a15f8f724da3742a84d697a94c1141, type: 2}
+  levelWinScreen: {fileID: 11430802, guid: 25c1761c8d3ddc24887de7081e53c9ab, type: 2}
+  levelRepeatScreen: {fileID: 11461036, guid: 6df11c03f471d114fb9833808bd9b27f, type: 2}
   timeText: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
