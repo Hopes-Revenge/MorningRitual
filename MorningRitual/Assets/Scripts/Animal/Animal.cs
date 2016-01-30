@@ -16,6 +16,7 @@ public class Animal : MonoBehaviour {
     private PlayerController1 playerController;
     private float originalScale = 1;
 
+    private Animator animator;
     private PlayerController1 animalController;
 
     // Use this for initialization
@@ -23,6 +24,7 @@ public class Animal : MonoBehaviour {
     {
         animalController = GetComponent<PlayerController1>();
         animalController.enabled = false;
+        animator = GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
@@ -31,6 +33,11 @@ public class Animal : MonoBehaviour {
         {
             if(Input.GetButtonDown("ActivateAnimal"))
             {
+                if(animator != null)
+                {
+                    Debug.Log("HEY");
+                    animator.SetTrigger("Activate");
+                }
                 Activated();
             }
             if(Input.GetButton("ActivateAnimal"))
