@@ -1,0 +1,22 @@
+print "Starting maya loading and fbx conversion \n";
+			
+if (`file -q -exists "D:/Users/jja6071/MorningRitual/MorningRitual/Assets/Art/farm_set_01/pumpkin/pumpkin_02.mb"`)
+{
+	file -o "D:/Users/jja6071/MorningRitual/MorningRitual/Assets/Art/farm_set_01/pumpkin/pumpkin_02.mb";
+	FBXExportEmbeddedTextures -v false;
+	// FBXExportHardEdges -v true;
+	FBXExportApplyConstantKeyReducer -v false;
+	FBXExportShowUI -v false;
+
+	print "Before fbx export\n";
+	FBXExport -f "D:/Users/jja6071/MorningRitual/MorningRitual/Temp/ExportedFBXFile.fbx";
+	print "after fbx export\n";
+}
+else
+	print "Could not open Maya file.";
+
+system ("del \"D:\\Users\\jja6071\\MorningRitual\\MorningRitual\\Temp\\CommandPipe\"");
+
+$donepipeKill = `fopen "D:/Users/jja6071/MorningRitual/MorningRitual/Temp/SyncPipeKill" "w"`;
+fwrite $donepipeKill "Done";
+fclose $donepipeKill;
