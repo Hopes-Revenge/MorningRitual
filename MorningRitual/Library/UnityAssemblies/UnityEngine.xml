@@ -9167,14 +9167,11 @@ See Also: CanvasRenderer.SetMaterialCount, CanvasRenderer.SetTexture.</para>
         <para>ComputeBuffer used for Graphics.DrawProceduralIndirect.</para>
       </summary>
     </member>
-<<<<<<< HEAD
     <member name="F:UnityEngine.ComputeBufferType.GPUMemory">
       <summary>
         <para>ComputeBuffer is attempted to be located in GPU memory.</para>
       </summary>
     </member>
-=======
->>>>>>> 056fd650f37f92d6d1bfa830b02d05d505c2ee00
     <member name="F:UnityEngine.ComputeBufferType.Raw">
       <summary>
         <para>Raw ComputeBuffer type.</para>
@@ -38925,7 +38922,6 @@ Developing, Development, Invalid, Operating.</para>
         <para>The number of root transforms of this scene.</para>
       </summary>
     </member>
-<<<<<<< HEAD
     <member name="M:UnityEngine.SceneManagement.Scene.GetRootGameObjects">
       <summary>
         <para>Returns all the root game objects in the scene.</para>
@@ -38940,8 +38936,6 @@ Developing, Development, Invalid, Operating.</para>
       </summary>
       <param name="rootGameObjects">A list which is used to return the root game objects.</param>
     </member>
-=======
->>>>>>> 056fd650f37f92d6d1bfa830b02d05d505c2ee00
     <member name="M:UnityEngine.SceneManagement.Scene.IsValid">
       <summary>
         <para>Tells if the scene is valid.
@@ -38980,7 +38974,6 @@ A scene can be invalid if you eg. tried to open a scene that does not exists in 
         <para>Number of scenes in Build Settings.</para>
       </summary>
     </member>
-<<<<<<< HEAD
     <member name="M:UnityEngine.SceneManagement.SceneManager.CreateScene(System.String)">
       <summary>
         <para>Create an empty new scene with the given name additively.</para>
@@ -38990,16 +38983,6 @@ A scene can be invalid if you eg. tried to open a scene that does not exists in 
     <member name="M:UnityEngine.SceneManagement.SceneManager.GetActiveScene">
       <summary>
         <para>Get the active scene.</para>
-=======
-    <member name="M:UnityEngine.SceneManagement.SceneManager.GetActiveScene">
-      <summary>
-        <para>Get the active scene.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.SceneManagement.SceneManager.GetAllScenes">
-      <summary>
-        <para>Get all the scenes.</para>
->>>>>>> 056fd650f37f92d6d1bfa830b02d05d505c2ee00
       </summary>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.GetSceneAt(System.Int32)">
@@ -45005,11 +44988,7 @@ Useful for restarting a trail from a new position.</para>
     </member>
     <member name="F:UnityEngine.VR.VRDeviceType.Morpheus">
       <summary>
-<<<<<<< HEAD
         <para>Sony's Project Morpheus VR device for Playstation 4. (Obsolete please use VRDeviceType.PlayStationVR instead).</para>
-=======
-        <para>Sony's Project Morpheus VR device for Playstation 4.</para>
->>>>>>> 056fd650f37f92d6d1bfa830b02d05d505c2ee00
       </summary>
     </member>
     <member name="F:UnityEngine.VR.VRDeviceType.None">
@@ -45022,14 +45001,11 @@ Useful for restarting a trail from a new position.</para>
         <para>Oculus family of VR devices.</para>
       </summary>
     </member>
-<<<<<<< HEAD
     <member name="F:UnityEngine.VR.VRDeviceType.PlayStationVR">
       <summary>
         <para>Sony's PlayStation VR device for Playstation 4 (formerly called Project Morpheus VR).</para>
       </summary>
     </member>
-=======
->>>>>>> 056fd650f37f92d6d1bfa830b02d05d505c2ee00
     <member name="F:UnityEngine.VR.VRDeviceType.Split">
       <summary>
         <para>Split screen stereo 3D (the left and right cameras are rendered side by side).</para>
@@ -45607,7 +45583,6 @@ Useful for restarting a trail from a new position.</para>
         <para>When time reaches the end of the animation clip, time will ping pong back between beginning and end.</para>
       </summary>
     </member>
-<<<<<<< HEAD
     <member name="T:UnityEngine.WSA.AppCallbackItem">
       <summary>
         <para>Delegate that can be invoked on specific thread.</para>
@@ -46158,8 +46133,6 @@ Useful for restarting a trail from a new position.</para>
       <param name="width"></param>
       <param name="height"></param>
     </member>
-=======
->>>>>>> 056fd650f37f92d6d1bfa830b02d05d505c2ee00
     <member name="T:UnityEngine.WWW">
       <summary>
         <para>Simple access to web pages.</para>

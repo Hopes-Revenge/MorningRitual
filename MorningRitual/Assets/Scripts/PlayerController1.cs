@@ -72,7 +72,7 @@ public class PlayerController1 : MonoBehaviour {
 			speed = 2.5f;
 		}
 
-        if (Input.GetKeyDown(KeyCode.Space) && onGround && rdBody.velocity.y >= 0)
+        if (GetIsJumping() && onGround && rdBody.velocity.y >= 0)
         {
             rdBody.AddForce(new Vector2(0, jumpSpeed));
             thrownForce = 10f;
@@ -108,5 +108,10 @@ public class PlayerController1 : MonoBehaviour {
 	void Reset(){
 
 	}
+
+    public bool GetIsJumping()
+    {
+        return Input.GetAxis("Vertical") > 0.1f;
+    }
 }
 
