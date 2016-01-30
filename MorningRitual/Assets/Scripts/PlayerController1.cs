@@ -83,8 +83,9 @@ public class PlayerController1 : MonoBehaviour {
 			speed = 2.5f;
 		}
 
-        if (GetIsJumping() && onGround && rdBody.velocity.y >= 0)
+        if (GetIsJumping() && onGround)
         {
+            rdBody.velocity = new Vector2(rdBody.velocity.x, 0.0f);
             rdBody.AddForce(new Vector2(0, jumpSpeed));
             thrownForce = 10f;
             isInteracting = false;
@@ -105,6 +106,15 @@ public class PlayerController1 : MonoBehaviour {
 				isInteracting = false;
 			}
 		}
+    }
+
+    void OnDisable()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("IsJumping", false);
+            animator.SetBool("IsWalking", false);
+        }
     }
 
 	void Flip(){

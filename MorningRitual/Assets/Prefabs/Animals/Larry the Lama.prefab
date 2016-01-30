@@ -32,7 +32,7 @@ GameObject:
   - 114: {fileID: 11487870}
   - 114: {fileID: 11407318}
   - 60: {fileID: 6089220}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Larry the Lama
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,6 +402,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: jumpOffForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
