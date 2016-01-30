@@ -75,6 +75,7 @@
 Assets/Scripts/Animal/Animal.cs
 Assets/Scripts/Animal/Goat.cs
 Assets/Scripts/Animal/Llama.cs
+Assets/Scripts/Animal/Pig.cs
 Assets/Scripts/Animal/Sheep.cs
 Assets/Scripts/CameraFollow.cs
 Assets/Scripts/GameManager.cs
