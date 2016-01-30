@@ -9,12 +9,13 @@ public class PlayerController1 : MonoBehaviour {
 	private KeyCode lastHitKey;
 	bool onGround = false;
 	float thrownForce = 0;
-	//public Transform groundCheck;
+
+    bool isJumping = false;
+
 	public float groundRadius = .1f;
 	public LayerMask groundObject;
 	private Vector2 lastVelocity;
 
-	private GameObject lastWindmill;
 	public Vector3 resetPosition;
 	public bool resetLevel = false;
 	public bool dead = false;
@@ -41,11 +42,11 @@ public class PlayerController1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Space) && onGround) {
-			rdBody.AddForce(new Vector2(0,jumpSpeed));
-			thrownForce = 10f;
-			isInteracting = false;
-		}
+        if(onGround)
+        {
+            isJumping = false;
+        }
+		
 		if (Input.GetKeyDown (KeyCode.E)) {
 			interactionKey = !interactionKey;
 			if (interactionKey && nextToObject) {
@@ -61,7 +62,7 @@ public class PlayerController1 : MonoBehaviour {
 	}
 	void FixedUpdate(){
 		lastVelocity = rdBody.velocity;
-        Vector2 tempV = new Vector2(rdBody.transform.position.x, rdBody.transform.position.y - 0.5f);
+        Vector2 tempV = new Vector2(rdBody.transform.position.x, rdBody.transform.position.y - 0.55f);
 		onGround = Physics2D.OverlapCircle (tempV, groundRadius, groundObject);
 
 		float move = Input.GetAxis ("Horizontal");
@@ -70,6 +71,14 @@ public class PlayerController1 : MonoBehaviour {
 		if (isInteracting) {
 			speed = 2.5f;
 		}
+
+        if (Input.GetKeyDown(KeyCode.Space) && onGround)
+        {
+            rdBody.AddForce(new Vector2(0, jumpSpeed));
+            thrownForce = 10f;
+            isInteracting = false;
+            isJumping = true;
+        }
 
         rdBody.velocity = new Vector2 ((move * speed), rdBody.velocity.y);
 
@@ -97,11 +106,7 @@ public class PlayerController1 : MonoBehaviour {
 
 
 	void Reset(){
-		rdBody.position = resetPosition;
-		rdBody.velocity = new Vector2 (0, 0);
-		resetLevel = false;
-		dead = false;
-		isInteracting = false;
+
 	}
 }
 
