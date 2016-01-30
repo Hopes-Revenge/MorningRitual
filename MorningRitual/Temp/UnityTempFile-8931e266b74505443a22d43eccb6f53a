@@ -78,7 +78,6 @@ Assets/Scripts/Animal/Llama.cs
 Assets/Scripts/Animal/Pig.cs
 Assets/Scripts/Animal/Sheep.cs
 Assets/Scripts/CameraFollow.cs
-Assets/Scripts/CloudScript.cs
 Assets/Scripts/GameManager.cs
 Assets/Scripts/Grid.cs
 Assets/Scripts/GridEditor.cs
@@ -86,5 +85,6 @@ Assets/Scripts/LevelEndTrigger.cs
 Assets/Scripts/PlayerController1.cs
 Assets/Scripts/SelectBase.cs
 Assets/Scripts/TileSpriteHelper.cs
+Assets/Scripts/UI/GenerateLevels.cs
 Assets/Scripts/UI/PlayScene.cs
 Assets/Scripts/UI/UIAnimateState.cs
