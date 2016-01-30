@@ -3,19 +3,15 @@
 -nowarn:0169
 -out:Temp/Assembly-CSharp.dll
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
--r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
--r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
--r:"C:/Program Files/Unity/Editor/Data\Managed/Mono.Cecil.dll"
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll"
--define:UNITY_5_2_3
--define:UNITY_5_2
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll"
+-define:UNITY_5_3_1
+-define:UNITY_5_3
 -define:UNITY_5
 -define:ENABLE_NEW_BUGREPORTER
--define:ENABLE_2D_PHYSICS
--define:ENABLE_4_6_FEATURES
 -define:ENABLE_AUDIO
 -define:ENABLE_CACHING
 -define:ENABLE_CLOTH
@@ -31,7 +27,9 @@
 -define:ENABLE_PLUGIN_INSPECTOR
 -define:ENABLE_SHADOWS
 -define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_SPRITERENDERER_FLIPPING
 -define:ENABLE_SPRITES
+-define:ENABLE_SPRITE_POLYGON
 -define:ENABLE_TERRAIN
 -define:ENABLE_RAKNET
 -define:ENABLE_UNET
@@ -43,12 +41,13 @@
 -define:ENABLE_CLOUD_SERVICES_ADS
 -define:ENABLE_CLOUD_HUB
 -define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
 -define:ENABLE_CLOUD_SERVICES_ANALYTICS
 -define:ENABLE_CLOUD_SERVICES_UNET
 -define:ENABLE_CLOUD_SERVICES_BUILD
 -define:ENABLE_CLOUD_LICENSE
 -define:ENABLE_EDITOR_METRICS
--define:ENABLE_REFLECTION_BUFFERS
+-define:ENABLE_EDITOR_METRICS_CACHING
 -define:INCLUDE_DYNAMIC_GI
 -define:INCLUDE_GI
 -define:INCLUDE_IL2CPP
@@ -57,6 +56,7 @@
 -define:RENDER_SOFTWARE_CURSOR
 -define:ENABLE_LOCALIZATION
 -define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
+-define:ENABLE_EDITOR_TESTS_RUNNER
 -define:UNITY_STANDALONE_WIN
 -define:UNITY_STANDALONE
 -define:ENABLE_SUBSTANCE
@@ -68,6 +68,7 @@
 -define:ENABLE_LOG_MIXED_STACKTRACE
 -define:ENABLE_UNITYWEBREQUEST
 -define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
 -define:ENABLE_WEBSOCKET_HOST
 -define:ENABLE_MONO
 -define:ENABLE_PROFILER
@@ -77,8 +78,7 @@
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_WIN
--define:UNITY_TEAM_LICENSE
--define:UNITY_PRO_LICENSE
-Assets/Scripts/PlayerController.cs
+Assets/Scripts/Animal/Animal.cs
+Assets/Scripts/PlayerController1.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
