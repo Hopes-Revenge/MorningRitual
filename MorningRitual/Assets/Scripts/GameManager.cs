@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     public Canvas canvas;
     public UIAnimateState levelWinScreen;
     public UIAnimateState levelRepeatScreen;
+    public GameObject[] instatiate;
 
     private Text timeText;
     private bool hasTriggeredEnd = false;
@@ -14,6 +15,11 @@ public class GameManager : MonoBehaviour {
 
     void Awake()
     {
+        for(int i = 0; i < instatiate.Length; i++)
+        {
+            Instantiate(instatiate[i]);
+        }
+
         canvas = Instantiate(canvas) as Canvas;
         levelWinScreen = Instantiate(levelWinScreen) as UIAnimateState;
         timeText = levelWinScreen.transform.FindChild("MidPanel").GetComponentInChildren<Text>();
