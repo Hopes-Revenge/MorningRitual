@@ -88,7 +88,7 @@ NavMeshSettings:
 --- !u!1 &244541872
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 173206, guid: ac92127892897fa40b711a9431b5b310, type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
@@ -96,7 +96,7 @@ GameObject:
   - 212: {fileID: 244541873}
   - 61: {fileID: 244541875}
   m_Layer: 8
-  m_Name: tileSprites2_1
+  m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105,7 +105,8 @@ GameObject:
 --- !u!212 &244541873
 SpriteRenderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 21201888, guid: ac92127892897fa40b711a9431b5b310,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 244541872}
   m_Enabled: 1
@@ -128,26 +129,27 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 2daadda69ad55384fa3a501e8194f5e9, type: 3}
+  m_Sprite: {fileID: 21300030, guid: 2daadda69ad55384fa3a501e8194f5e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!4 &244541874
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 412354, guid: ac92127892897fa40b711a9431b5b310, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 244541872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.2421, y: -2.61, z: 0}
-  m_LocalScale: {x: 13.75, y: 1, z: 1}
+  m_LocalPosition: {x: -2.212, y: -2.34, z: 0}
+  m_LocalScale: {x: 6.927805, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!61 &244541875
 BoxCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 6182258, guid: ac92127892897fa40b711a9431b5b310,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 244541872}
   m_Enabled: 1
@@ -155,9 +157,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.49999997, y: 0.5}
+  m_Offset: {x: 0.5, y: 0.431013}
   serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 1}
+  m_Size: {x: 1, y: 0.862026}
 --- !u!1 &481219510
 GameObject:
   m_ObjectHideFlags: 0
