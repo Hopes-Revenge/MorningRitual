@@ -1,4 +1,8 @@
 sceneSetups:
-- path: Assets/Scenes/afl4947Dev.unity
+<<<<<<< HEAD
+- path: Assets/Scenes/Chris Level-2.unity
+=======
+- path: Assets/Scenes/MainMenu.unity
+>>>>>>> 81d22e3bb240eb1446757b22ba7c3f55925b1c6f
   isLoaded: 1
   isActive: 1
