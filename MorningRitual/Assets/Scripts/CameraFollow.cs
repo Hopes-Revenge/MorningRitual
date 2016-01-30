@@ -3,7 +3,11 @@ using System.Collections;
 
 public class CameraFollow : MonoBehaviour {
 
+    [Header("Setup")]
     public Transform followTransform;
+
+    [Header("Configure")]
+    public float applySpeed = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +27,7 @@ public class CameraFollow : MonoBehaviour {
     void Follow()
     {
         Vector3 pos = transform.position;
-        pos.x = followTransform.position.x;
+        pos.x = Mathf.Lerp(transform.position.x, followTransform.position.x, Time.fixedDeltaTime * applySpeed);
         transform.position = pos;
     }
 }

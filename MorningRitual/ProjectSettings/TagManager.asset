@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Grass
+=======
+  - Garbage
+>>>>>>> ab3aa923536b992f9c3c0bddaf6a3504708627e2
   layers:
   - Default
   - TransparentFX
