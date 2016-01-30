@@ -118,7 +118,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.545, y: -0.237, z: 0}
+  m_LocalPosition: {x: 2.545, y: -1.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 414886}
@@ -243,7 +243,7 @@ MonoBehaviour:
   seatTransform: {fileID: 456868}
   neckTransform: {fileID: 414886}
   head: {fileID: 117074}
-  min: 1.382
+  min: 0.15
   max: 2
   headSpeed: 4
   jumpOffForce: 2
