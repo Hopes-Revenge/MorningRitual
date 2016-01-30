@@ -10,7 +10,7 @@ public class PlayerController1 : MonoBehaviour {
 	bool onGround = false;
 	float thrownForce = 0;
 
-    bool isJumping = false;
+    public bool isJumping = false;
 
 	public float groundRadius = .1f;
 	public LayerMask groundObject;
@@ -72,7 +72,7 @@ public class PlayerController1 : MonoBehaviour {
 			speed = 2.5f;
 		}
 
-        if (Input.GetKeyDown(KeyCode.Space) && onGround)
+        if (Input.GetKeyDown(KeyCode.Space) && onGround && rdBody.velocity.y >= 0)
         {
             rdBody.AddForce(new Vector2(0, jumpSpeed));
             thrownForce = 10f;
