@@ -20,6 +20,7 @@ public class PlayerController1 : MonoBehaviour {
 	public bool resetLevel = false;
 	public bool dead = false;
 
+    private Animator animator;
 
 	private bool isInteracting = false;
 	private bool interactionKey = false;
@@ -37,8 +38,10 @@ public class PlayerController1 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rdBody = GetComponent<Rigidbody2D> ();
-		resetPosition = rdBody.position;
+        animator = GetComponent<Animator>();
+        resetPosition = rdBody.position;
 	}
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -59,14 +62,22 @@ public class PlayerController1 : MonoBehaviour {
 			Reset();
 		}
 
-	}
+        if (animator != null)
+        {
+            animator.SetBool("IsJumping", rdBody.velocity.y > 0.2f);
+        }
+    }
 	void FixedUpdate(){
 		lastVelocity = rdBody.velocity;
         Vector2 tempV = new Vector2(rdBody.transform.position.x, rdBody.transform.position.y - 0.55f);
 		onGround = Physics2D.OverlapCircle (tempV, groundRadius, groundObject);
 
 		float move = Input.GetAxis ("Horizontal");
-		playerMovement = move;
+        if (animator != null)
+        {
+            animator.SetBool("IsWalking", Mathf.Abs(move) > 0.2f);
+        }
+        playerMovement = move;
 		float speed = maxSpeed;
 		if (isInteracting) {
 			speed = 2.5f;
@@ -94,7 +105,7 @@ public class PlayerController1 : MonoBehaviour {
 				isInteracting = false;
 			}
 		}
-	}
+    }
 
 	void Flip(){
 		facingRight = !facingRight;

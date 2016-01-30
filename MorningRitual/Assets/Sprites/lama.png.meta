@@ -1,12 +1,11 @@
 fileFormatVersion: 2
 guid: 32b816c2510394c4099c1c4816dc611f
-timeCreated: 1454131706
+timeCreated: 1454168395
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: lama_0
     21300002: lama_1
-    21300004: lama_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -86,17 +85,6 @@ TextureImporter:
         - {x: 0, y: -26}
         - {x: 11, y: -30}
         - {x: 24, y: -30}
-    - name: lama_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
     outline: []
   spritePackingTag: 
   userData: 
