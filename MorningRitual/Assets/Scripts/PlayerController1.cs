@@ -9,7 +9,7 @@ public class PlayerController1 : MonoBehaviour {
 	private KeyCode lastHitKey;
 	bool onGround = false;
 	float thrownForce = 0;
-	public Transform groundCheck;
+	//public Transform groundCheck;
 	public float groundRadius = .1f;
 	public LayerMask groundObject;
 	private Vector2 lastVelocity;
@@ -61,7 +61,8 @@ public class PlayerController1 : MonoBehaviour {
 	}
 	void FixedUpdate(){
 		lastVelocity = rdBody.velocity;
-		onGround = Physics2D.OverlapCircle (groundCheck.position, groundRadius, groundObject);
+        Vector2 tempV = new Vector2(rdBody.transform.position.x, rdBody.transform.position.y - 0.5f);
+		onGround = Physics2D.OverlapCircle (tempV, groundRadius, groundObject);
 
 		float move = Input.GetAxis ("Horizontal");
 		playerMovement = move;
