@@ -44,7 +44,7 @@ GameObject:
   - 114: {fileID: 11448578}
   - 61: {fileID: 6161190}
   - 114: {fileID: 11432686}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: Doge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.23, y: -1.31, z: 0}
+  m_LocalPosition: {x: 3.686, y: -0.269, z: 0}
   m_LocalScale: {x: 0.6110761, y: 0.6110761, z: 0.6110761}
   m_Children:
   - {fileID: 412250}
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 134960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 150fbbc8b46cd9949afc712028621f2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 126eb5f5e70d9a846b4a37d868d25058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   seatTransform: {fileID: 410734}
@@ -206,7 +206,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134960}

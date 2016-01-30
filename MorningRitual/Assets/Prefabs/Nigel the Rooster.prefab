@@ -182,11 +182,11 @@ MonoBehaviour:
   groundRadius: 0.1
   groundObject:
     serializedVersion: 2
-    m_Bits: 2304
-  resetPosition: {x: 0, y: 0, z: 0}
+    m_Bits: 3328
+  resetPosition: {x: 0.214, y: 0.134, z: 0}
   resetLevel: 0
   dead: 0
-  rdBody: {fileID: 0}
+  rdBody: {fileID: 5063122}
 --- !u!212 &21261850
 SpriteRenderer:
   m_ObjectHideFlags: 1

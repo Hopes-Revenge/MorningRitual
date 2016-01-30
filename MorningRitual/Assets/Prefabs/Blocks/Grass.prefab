@@ -89,15 +89,9 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
-<<<<<<< HEAD
       propertyPath: m_TagString
       value: Grass
       objectReference: {fileID: 0}
-=======
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f560c417942a1ca40916aa3ade7b4704, type: 2}
->>>>>>> ab3aa923536b992f9c3c0bddaf6a3504708627e2
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 173206}

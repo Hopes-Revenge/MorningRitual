@@ -3,8 +3,9 @@ using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
 
-[CustomEditor (typeof(Grid))]
-public class GridEditor : Editor {
+[CustomEditor(typeof(Grid))]
+public class GridEditor : Editor
+{
     Grid grid;
     List<GameObject> blocks = new List<GameObject>();
     Sprite[] grassSprites;
@@ -24,20 +25,20 @@ public class GridEditor : Editor {
         if (e.isKey && e.character == 'a')
         {
             GameObject obj;
-            Object prefab = EditorUtility.GetPrefabParent(Selection.activeObject);
+            Object prefab = PrefabUtility.GetPrefabParent(Selection.activeObject);
 
             if (prefab)
             {
                 Undo.IncrementCurrentGroup();
-                obj = (GameObject)EditorUtility.InstantiatePrefab(prefab);
+                obj = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
                 blocks.Add(obj);
                 Vector3 aligned = new Vector3(Mathf.Floor(mousePos.x / grid.width) * grid.width + grid.width / 2.0f,
                                   Mathf.Floor(mousePos.y / grid.height) * grid.height + grid.height / 2.0f, 0.0f);
 
                 int blockOrientation = 0;
-                for (int i = blocks.Count-1; i >= 0; i--)
+                for (int i = blocks.Count - 1; i >= 0; i--)
                 {
-                    if (blocks[i] == null ||blocks[i].transform.position == aligned)
+                    if (blocks[i] == null || blocks[i].transform.position == aligned)
                     {
                         DestroyImmediate(blocks[i]);
                         blocks.RemoveAt(i);
@@ -46,7 +47,8 @@ public class GridEditor : Editor {
                 }
                 obj.transform.position = aligned;
                 obj.transform.SetParent(GameObject.Find("Grid").transform);
-                if (obj.tag == "Grass") {
+                if (obj.tag == "Grass")
+                {
                     for (int i = blocks.Count - 1; i >= 0; i--)
                     {
                         blockOrientation = 15;
@@ -71,16 +73,18 @@ public class GridEditor : Editor {
             }
         }
     }
-   
+
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
