@@ -8,17 +8,30 @@ public class Animal : MonoBehaviour {
     public Transform seatTransform;
 
     private bool isSeated = false;
-    private Rigidbody2D playerBody;
+    private Transform playerTransform;
+    private PlayerController1 playerController;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+    // Use this for initialization
+    protected virtual void Awake()
+    {
+
+    }
 	
 	// Update is called once per frame
-	void Update () {
-	
+	protected virtual void Update () {
+        if (isSeated)
+        {
+            
+        }
 	}
+
+    void LateUpdate()
+    {
+        if (isSeated)
+        {
+            playerTransform.position = seatTransform.position;
+        }
+    }
 
     protected virtual void OnSeated()
     {
@@ -33,21 +46,25 @@ public class Animal : MonoBehaviour {
     private void Seated()
     {
         isSeated = true;
+        playerTransform.SetParent(seatTransform, false);
         OnSeated();
     }
 
     private void Unseated()
     {
         isSeated = false;
+        playerTransform.SetParent(null, false);
         OnUnSeated();
     }
 
     void OnTriggerEnter2D(Collider2D other) {
         if (other.isTrigger || isSeated) return;
         Transform root = other.transform.root.transform;
+        Debug.Log(root.tag);
         if (root.CompareTag("Player"))
         {
-            playerBody = other.GetComponent<Rigidbody2D>();
+            playerTransform = root;
+            playerController = root.GetComponent<PlayerController1>();
             Seated();
         }
     }
