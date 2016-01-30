@@ -1,13 +1,13 @@
 while (1)
 {	
-	if (`filetest -r "D:/Users/jja6071/MorningRitual/MorningRitual/Temp/CommandPipe"`)
+	if (`filetest -r "D:/Users/afl4947/MorningRitual/MorningRitual/Temp/CommandPipe"`)
 	{
 		$exportNormals = 0;
 		$exportTangents = 0;
 		$bakeCommand = "";
 	
 		// Parse settings
-		$waitpipe = `fopen "D:/Users/jja6071/MorningRitual/MorningRitual/Temp/CommandPipe" "r"`;
+		$waitpipe = `fopen "D:/Users/afl4947/MorningRitual/MorningRitual/Temp/CommandPipe" "r"`;
 		$filename = `fgetline $waitpipe`;
 		
 		for ($i = 0; $i < 3; ++$i) 
@@ -136,16 +136,16 @@ while (1)
 				FBXExportShowUI -v false;
 
 				print "Before fbx export\n";
-				FBXExport -f "D:/Users/jja6071/MorningRitual/MorningRitual/Temp/ExportedFBXFile.fbx";
+				FBXExport -f "D:/Users/afl4947/MorningRitual/MorningRitual/Temp/ExportedFBXFile.fbx";
 				print "after fbx export\n";
 			}
 			else
 				print "Could not open Maya file.";
 
 			// TODO: We should use sysFile, so we don't have to have two separate mel scripts for OSX/Windows
-			system ("del \"D:\\Users\\jja6071\\MorningRitual\\MorningRitual\\Temp\\CommandPipe\"");
+			system ("del \"D:\\Users\\afl4947\\MorningRitual\\MorningRitual\\Temp\\CommandPipe\"");
 
-			$donepipe = `fopen "D:/Users/jja6071/MorningRitual/MorningRitual/Temp/SyncPipe" "w"`;
+			$donepipe = `fopen "D:/Users/afl4947/MorningRitual/MorningRitual/Temp/SyncPipe" "w"`;
 			fwrite $donepipe "Done";
 			fclose $donepipe;
 			print "Finished maya loading and fbx conversion \n";
