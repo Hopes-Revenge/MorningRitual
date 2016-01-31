@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/PigTut.unity
+- path: Assets/Scenes/SkyIsTheLimit.unity
   isLoaded: 1
   isActive: 1
