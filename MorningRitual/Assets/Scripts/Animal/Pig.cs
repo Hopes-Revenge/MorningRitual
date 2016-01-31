@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Pig : MonoBehaviour {
 
+    public float sinkScale = 0.5f;
+    public float raiseScale = 0.2f;
+
     Vector2 basePosition;
     bool isSinking = false;
     bool sunk = false;
@@ -23,14 +26,14 @@ public class Pig : MonoBehaviour {
         {
             if (t < 1.0f)
             {
-                t += Time.deltaTime * 0.5f;
+                t += Time.deltaTime * sinkScale;
             }
         }
         else if(!isSinking)
         {
             if (t > 0.0f)
             {
-                t -= Time.deltaTime * 0.25f;
+                t -= Time.deltaTime * raiseScale;
             }
         }
 

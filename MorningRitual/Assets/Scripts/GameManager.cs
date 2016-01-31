@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour {
     public UIAnimateState levelRepeatScreen;
     public GameObject[] instatiate;
 
+    [Header("Camera Bounds")]
+    public Vector2 min;
+    public Vector2 max;
+
     private Text timeText;
     private bool hasTriggeredEnd = false;
     private float levelTime = 0;
@@ -61,5 +65,14 @@ public class GameManager : MonoBehaviour {
             System.TimeSpan duration = new System.TimeSpan(0, 0, 0, (int)levelTime);
             timeText.text += duration.ToString().Substring(3);
         }
+    }
+
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawCube(min, Vector3.one * 0.2f);
+        Gizmos.DrawCube(max, Vector3.one * 0.2f);
+        Gizmos.DrawWireCube((max - min) / 2 + min, max - min);
     }
 }
