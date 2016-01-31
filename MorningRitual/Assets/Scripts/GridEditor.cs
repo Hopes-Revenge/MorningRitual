@@ -8,6 +8,7 @@ public class GridEditor : Editor
 {
     Grid grid;
     List<GameObject> blocks = new List<GameObject>();
+    List<GameObject> grassBlocks = new List<GameObject>();
     Sprite[] grassSprites;
     public void OnEnable()
     {
@@ -49,24 +50,25 @@ public class GridEditor : Editor
                 obj.transform.SetParent(GameObject.Find("Grid").transform);
                 if (obj.tag == "Grass")
                 {
-                    for (int i = blocks.Count - 1; i >= 0; i--)
+                    grassBlocks.Add(obj);
+                    for (int i = grassBlocks.Count - 1; i >= 0; i--)
                     {
                         blockOrientation = 15;
-                        Vector3 up = new Vector3(blocks[i].transform.position.x, blocks[i].transform.position.y + 1.0f, 0.0f);
-                        Vector3 down = new Vector3(blocks[i].transform.position.x, blocks[i].transform.position.y - 1.0f, 0.0f);
-                        Vector3 left = new Vector3(blocks[i].transform.position.x - 1.0f, blocks[i].transform.position.y, 0.0f);
-                        Vector3 right = new Vector3(blocks[i].transform.position.x + 1.0f, blocks[i].transform.position.y, 0.0f);
-                        for (int j = blocks.Count - 1; j >= 0; j--)
+                        Vector3 up = new Vector3(grassBlocks[i].transform.position.x, grassBlocks[i].transform.position.y + 1.0f, 0.0f);
+                        Vector3 down = new Vector3(grassBlocks[i].transform.position.x, grassBlocks[i].transform.position.y - 1.0f, 0.0f);
+                        Vector3 left = new Vector3(grassBlocks[i].transform.position.x - 1.0f, grassBlocks[i].transform.position.y, 0.0f);
+                        Vector3 right = new Vector3(grassBlocks[i].transform.position.x + 1.0f, grassBlocks[i].transform.position.y, 0.0f);
+                        for (int j = grassBlocks.Count - 1; j >= 0; j--)
                         {
-                            if (blocks[j].transform.position == up) blockOrientation -= 1;
-                            if (blocks[j].transform.position == down) blockOrientation -= 2;
-                            if (blocks[j].transform.position == left) blockOrientation -= 4;
-                            if (blocks[j].transform.position == right) blockOrientation -= 8;
+                            if (grassBlocks[j].transform.position == up) blockOrientation -= 1;
+                            if (grassBlocks[j].transform.position == down) blockOrientation -= 2;
+                            if (grassBlocks[j].transform.position == left) blockOrientation -= 4;
+                            if (grassBlocks[j].transform.position == right) blockOrientation -= 8;
                             Debug.Log(" Block Orientation=" + blockOrientation);
                         }
                         Debug.Log(" Block sprite=" + i + " grassSprite= " + blockOrientation);
-                        Debug.Log(" Blocks=" + blocks.Count + " grass= " + grassSprites.Length);
-                        blocks[i].GetComponent<SpriteRenderer>().sprite = grassSprites[blockOrientation];
+                        Debug.Log(" Blocks=" + grassBlocks.Count + " grass= " + grassSprites.Length);
+                        grassBlocks[i].GetComponent<SpriteRenderer>().sprite = grassSprites[blockOrientation];
                     }
                 }
                 Undo.RegisterCreatedObjectUndo(obj, "Create " + obj.name);

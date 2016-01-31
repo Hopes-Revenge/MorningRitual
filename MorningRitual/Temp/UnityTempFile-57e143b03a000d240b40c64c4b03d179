@@ -78,6 +78,7 @@ Assets/Scripts/Animal/Llama.cs
 Assets/Scripts/Animal/Pig.cs
 Assets/Scripts/Animal/Sheep.cs
 Assets/Scripts/CameraFollow.cs
+Assets/Scripts/CloudScript.cs
 Assets/Scripts/GameManager.cs
 Assets/Scripts/Grid.cs
 Assets/Scripts/GridEditor.cs
