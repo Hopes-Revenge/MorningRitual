@@ -1,16 +1,17 @@
 fileFormatVersion: 2
 guid: 99faa3e8522af714fa4f1e7aaa6988d7
-timeCreated: 1454163526
+timeCreated: 1454195414
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: UI_0
     21300002: UI_1
     21300004: UI_2
+    21300006: UI_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -29,7 +30,7 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: 0
@@ -87,6 +88,21 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 6, z: 6, w: 6}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: UI_3
+      rect:
+        serializedVersion: 2
+        x: 32
         y: 0
         width: 32
         height: 32

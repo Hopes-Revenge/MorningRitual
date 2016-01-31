@@ -158,7 +158,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 21300002, guid: 99faa3e8522af714fa4f1e7aaa6988d7,
       type: 3}
     m_PressedSprite: {fileID: 21300000, guid: 99faa3e8522af714fa4f1e7aaa6988d7, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 99faa3e8522af714fa4f1e7aaa6988d7, type: 3}
+    m_DisabledSprite: {fileID: 21300006, guid: 99faa3e8522af714fa4f1e7aaa6988d7, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -225,7 +225,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MILE 1
+  m_Text: 
 --- !u!222 &22261718
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -279,7 +279,16 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300006, guid: 99faa3e8522af714fa4f1e7aaa6988d7,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 196672}

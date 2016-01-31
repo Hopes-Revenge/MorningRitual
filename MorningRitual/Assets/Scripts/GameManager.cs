@@ -36,6 +36,8 @@ public class GameManager : MonoBehaviour {
         {
             if(levelWinScreen != null)
             {
+                PlayerPrefs.SetInt("Highest Level", UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+                PlayerPrefs.Save();
                 levelWinScreen.IsVisible = true;
             } else {
                 Debug.Log("HEY! Attach a level win screen please.");
