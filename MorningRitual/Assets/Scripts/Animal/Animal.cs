@@ -11,7 +11,7 @@ public class Animal : MonoBehaviour {
     [Header("Configure")]
     public float jumpOffForce = 1;
 
-    private bool isSeated = false;
+    protected bool isSeated = false;
     private Transform playerTransform;
     private PlayerController1 playerController;
     private float originalScale = 1;
