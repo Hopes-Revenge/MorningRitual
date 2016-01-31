@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/WaterLevel.unity
+- path: Assets/Scenes/Bouncetana.unity
   isLoaded: 1
   isActive: 1
