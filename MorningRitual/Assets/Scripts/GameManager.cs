@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour {
     {
         if (keyBoardInput != null && controllerInput != null)
         {
-            if (Input.GetJoystickNames().Length > 0 && !Input.anyKey)
+            if (Input.GetJoystickNames().Length > 0)
             {
                 keyBoardInput.SetActive(false);
                 controllerInput.SetActive(true);
@@ -112,14 +112,6 @@ public class GameManager : MonoBehaviour {
                 body.velocity = velo;
             }
         }
-        if (eventSys != null)
-        {
-            GameObject o = GameObject.FindGameObjectWithTag("DefaultSelect");
-            if(o != null)
-            {
-                eventSys.SetSelectedGameObject(o);
-            }
-        }
         hasTriggeredEnd = true;
         if(didWin)
         {
@@ -157,6 +149,14 @@ public class GameManager : MonoBehaviour {
         {
             System.TimeSpan duration = new System.TimeSpan(0, 0, 0, (int)levelTime, (int)(levelTime * 100 - ((int)levelTime)));
             timeText.text += duration.ToString().Substring(3, 8);
+        }
+        if (eventSys != null)
+        {
+            GameObject o = GameObject.FindGameObjectWithTag("DefaultSelect");
+            if (o != null)
+            {
+                eventSys.SetSelectedGameObject(o);
+            }
         }
     }
 
