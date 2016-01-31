@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/LlamaTut.unity
-=======
-- path: Assets/Scenes/MainMenu.unity
->>>>>>> 154cdf3c912afe28ab4bd62f7713b8cbca8cad24
+- path: Assets/Scenes/JeremyScene.unity
   isLoaded: 1
   isActive: 1
