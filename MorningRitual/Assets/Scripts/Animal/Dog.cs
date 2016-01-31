@@ -34,6 +34,7 @@ public class Dog : Animal
 
     protected override void OnSeated()
     {
+        if (gameObject.GetComponent<AudioSource>().isPlaying) gameObject.GetComponent<AudioSource>().Stop();
         gameObject.GetComponent<AudioSource>().PlayOneShot(seatedSounds[Random.Range(0, seatedSounds.Length)]);
     }
     void OnTriggerStay2D(Collider2D other)

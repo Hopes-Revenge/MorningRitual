@@ -136,6 +136,9 @@ public class GameManager : MonoBehaviour {
                 Debug.Log("HEY! Attach a level win screen please.");
             }
         } else {
+
+            //player.GetComponent<AudioSource>().PlayOneShot(player.GetComponent<PlayerController1>().deathSounds[Random.Range(0, player.GetComponent<PlayerController1>().deathSounds.Length)]);
+
             if (levelRepeatScreen != null)
             {
                 levelRepeatScreen.IsVisible = true;
