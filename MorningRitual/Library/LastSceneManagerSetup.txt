@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Dog Tutorial.unity
-=======
-- path: Assets/Scenes/WaterLevel.unity
->>>>>>> a696bd4d33054d7ff49dd1da653eaa8b053f69b9
+- path: Assets/Scenes/Chris Level-3.unity
   isLoaded: 1
   isActive: 1
