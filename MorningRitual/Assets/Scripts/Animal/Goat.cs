@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Goat : Animal {
 
@@ -7,6 +8,8 @@ public class Goat : Animal {
 
     protected override void Activated()
     {
+        gameObject.GetComponent<AudioSource>().PlayOneShot(seatedSounds[Random.Range(0, seatedSounds.Length)]);
+
         float sign = Mathf.Sign(transform.localScale.x);
         Debug.Log(sign);
         Vector3 startPos = transform.position + new Vector3(1.1f, 0, 0) * sign * Mathf.Abs(transform.localScale.x);
@@ -20,5 +23,10 @@ public class Goat : Animal {
                 hit.transform.gameObject.SetActive(false);
             }
         }
+    }
+    protected override void OnSeated()
+    {
+        base.OnSeated();
+        gameObject.GetComponent<AudioSource>().PlayOneShot(activatedSounds[Random.Range(0, seatedSounds.Length)]);
     }
 }
