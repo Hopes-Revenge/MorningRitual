@@ -287,7 +287,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 66cc6610b24767c42880689365fcda9f, type: 3}
   - {fileID: 8300000, guid: 8d2e27cdb6bdbdf4b90ed1699e665711, type: 3}
   - {fileID: 8300000, guid: 808eb94d9be67d04e9490f852398de50, type: 3}
-  crow: {fileID: 0}
+  crow: {fileID: 8300000, guid: f0c39655ef8740b4c9b770fef46d7ca7, type: 3}
 --- !u!212 &21261850
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -349,6 +349,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: crow
+      value: 
+      objectReference: {fileID: 8300000, guid: f0c39655ef8740b4c9b770fef46d7ca7, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 125186}
