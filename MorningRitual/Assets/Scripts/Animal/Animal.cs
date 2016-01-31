@@ -17,7 +17,7 @@ public class Animal : MonoBehaviour {
     private float originalScale = 1;
 
     private Rigidbody2D body;
-    private Animator animator;
+    protected Animator animator;
     private PlayerController1 animalController;
 
     // Use this for initialization
