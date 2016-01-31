@@ -8,14 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
   - enabled: 1
-    path: Assets/Scenes/afl4947Dev.unity
-  - enabled: 0
-    path: Assets/Scenes/JeremyScene.unity
-  - enabled: 1
-    path: Assets/Scenes/parallax test.unity
-  - enabled: 1
-    path: Assets/Scenes/Chris Level.unity
+    path: Assets/Scenes/BasicTutorial.unity
   - enabled: 1
     path: Assets/Scenes/Dog Tutorial.unity
   - enabled: 1
     path: Assets/Scenes/GoatTutorial.unity
+  - enabled: 1
+    path: Assets/Scenes/LlamaTut.unity
+  - enabled: 1
+    path: Assets/Scenes/Chris Level.unity
+  - enabled: 1
+    path: Assets/Scenes/parallax test.unity
+  - enabled: 0
+    path: Assets/Scenes/JeremyScene.unity
+  - enabled: 1
+    path: Assets/Scenes/afl4947Dev.unity
