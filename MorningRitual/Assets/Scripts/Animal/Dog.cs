@@ -6,15 +6,29 @@ public class Dog : Animal
 
     private bool inWater = false;
 
-    void OnTriggerEnter2D(Collider2D other)
+    protected override void OnTriggerEnter2D(Collider2D other)
     {
-
         //check to see if dog has collided with water
         if (other.gameObject.tag == "Water")
         {
             //debug message
             inWater = true;
+            if(animator != null)
+            {
+                animator.SetBool("IsSwimming", true);
+            }
+        }
+        base.OnTriggerEnter2D(other);
+    }
 
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Water")
+        {
+            if (animator != null)
+            {
+               // animator.SetBool("IsSwimming", false);
+            }
         }
     }
 

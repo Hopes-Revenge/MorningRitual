@@ -130,7 +130,7 @@ public class Animal : MonoBehaviour {
         OnUnSeated();
     }
 
-    void OnTriggerEnter2D(Collider2D other) {
+    protected virtual void OnTriggerEnter2D(Collider2D other) {
         if (other.isTrigger || isSeated) return;
         Transform root = other.transform.root.transform;
         if (root.CompareTag("Player"))
