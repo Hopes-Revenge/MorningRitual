@@ -34,14 +34,15 @@ public class Dog : Animal
 
     protected override void OnSeated()
     {
-        //gameObject.GetComponent<AudioSource>().PlayOneShot(seatedSounds[Random.Range(0, seatedSounds.Length)]);
+        if (gameObject.GetComponent<AudioSource>().isPlaying) gameObject.GetComponent<AudioSource>().Stop();
+        gameObject.GetComponent<AudioSource>().PlayOneShot(seatedSounds[Random.Range(0, seatedSounds.Length)]);
     }
     void OnTriggerStay2D(Collider2D other)
     {
 
-        if (other.gameObject.tag == "Water" && isSeated)
+        if (other.gameObject.tag == "Water" && isSeated && !gameObject.GetComponent<AudioSource>().isPlaying)
         {
-            //gameObject.GetComponent<AudioSource>().PlayOneShot(activatedSounds[Random.Range(0, activatedSounds.Length)]);
+            gameObject.GetComponent<AudioSource>().PlayOneShot(activatedSounds[Random.Range(0, activatedSounds.Length)]);
         }
     }
 }

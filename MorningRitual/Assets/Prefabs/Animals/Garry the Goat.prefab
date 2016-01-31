@@ -246,7 +246,16 @@ MonoBehaviour:
   seatTransform: {fileID: 464676}
   jumpOffForce: 4
   seatedSounds:
-  - {fileID: 8300000, guid: 133421392b0aeb84fba4aaf5b5635321, type: 3}
+  - {fileID: 8300000, guid: ea287f34e6576d84db21775cd03a3ef3, type: 3}
+  - {fileID: 8300000, guid: 0a1e2667f85d3724cb7cc649efd95fe0, type: 3}
+  - {fileID: 8300000, guid: 403d569542c6ba84bbe3f445d114bc3c, type: 3}
+  - {fileID: 8300000, guid: 6a87e5bba7d6344468069d1b09f1724e, type: 3}
+  - {fileID: 8300000, guid: 231e6678df016504b8ee7d8e47279f16, type: 3}
+  - {fileID: 8300000, guid: 133bd676976fa6f4a8b9fc53047b73b7, type: 3}
+  - {fileID: 8300000, guid: fdcff74bc97ce7d468748941b99eb4da, type: 3}
+  - {fileID: 8300000, guid: de7255a5141602148a67997b1dd35cdd, type: 3}
+  - {fileID: 8300000, guid: de7255a5141602148a67997b1dd35cdd, type: 3}
+  - {fileID: 8300000, guid: c3c299bae8cf6ad47bf7266950da52b5, type: 3}
   activatedSounds:
   - {fileID: 8300000, guid: b119ef3ce670b994583fa869741e509c, type: 3}
   - {fileID: 8300000, guid: ed8199fbd2e4d2b44b5acef0f6ab6948, type: 3}
@@ -319,7 +328,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: seatedSounds.Array.size
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: activatedSounds.Array.size
@@ -345,6 +354,10 @@ Prefab:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: seatedSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: ea287f34e6576d84db21775cd03a3ef3, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 114224}
