@@ -39,12 +39,17 @@ public class PlayerController1 : MonoBehaviour {
 
 	public Rigidbody2D rdBody;
 
+    public AudioClip[] squakSounds;
+    public AudioClip[] deathSounds;
+    public AudioClip crow;
+
 	// Use this for initialization
 	void Start () {
 		rdBody = GetComponent<Rigidbody2D> ();
         animator = GetComponent<Animator>();
         resetPosition = rdBody.position;
-	}
+        //gameObject.GetComponent<AudioSource>().PlayOneShot(squakSounds[Random.Range(0, squakSounds.Length)]);
+    }
 
 	
 	// Update is called once per frame

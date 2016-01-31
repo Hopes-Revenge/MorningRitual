@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/Final level.unity
+=======
 - path: Assets/Scenes/PigTut.unity
+>>>>>>> eeedeb6ea0398cd1364d87d56e4764af9ae3c8e0
   isLoaded: 1
   isActive: 1
