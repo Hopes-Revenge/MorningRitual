@@ -5,10 +5,11 @@ using UnityEngine.UI;
 public class GenerateLevels : MonoBehaviour {
     public GameObject SelectButtonPrefab;
 
+    public bool testbool = true;
 	// Use this for initialization
 	void Start () {
         
-        if(PlayerPrefs.GetInt("Highest Level") < 1 || PlayerPrefs.GetInt("Highest Level") > UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings)
+        if(!(PlayerPrefs.HasKey("Highest Level")) || PlayerPrefs.GetInt("Highest Level") > UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings)
         {
             PlayerPrefs.SetInt("Highest Level", 1);
         }
@@ -22,6 +23,12 @@ public class GenerateLevels : MonoBehaviour {
             {
                 sceneButton.GetComponentInChildren<Text>().text = "Level " + i;
                 sceneButton.GetComponent<PlayScene>().numberSetAdd = i;
+
+                //Check if egg was found
+                if(PlayerPrefs.HasKey("Egg " + i))
+                {
+                    sceneButton.transform.GetChild(1).GetComponent<Image>().enabled = true;
+                }
             }
             else
             {

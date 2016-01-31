@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
     public UIAnimateState levelWinScreen;
     public UIAnimateState levelRepeatScreen;
     public GameObject[] instatiate;
+    public bool foundEgg = false;
 
     [Header("Camera Bounds")]
     public Vector2 min;
@@ -46,6 +47,10 @@ public class GameManager : MonoBehaviour {
         {
             if(levelWinScreen != null)
             {
+                if (foundEgg)
+                {
+                    PlayerPrefs.SetInt("Egg " + UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex, 1);
+                }
                 PlayerPrefs.SetInt("Highest Level", UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
                 PlayerPrefs.Save();
                 levelWinScreen.IsVisible = true;
@@ -64,8 +69,8 @@ public class GameManager : MonoBehaviour {
         }
         if(timeText != null)
         {
-            System.TimeSpan duration = new System.TimeSpan(0, 0, 0, (int)levelTime);
-            timeText.text += duration.ToString().Substring(3);
+            System.TimeSpan duration = new System.TimeSpan(0, 0, 0, (int)levelTime, (int)(levelTime * 100 - ((int)levelTime)));
+            timeText.text += duration.ToString().Substring(3, 8);
         }
     }
 
