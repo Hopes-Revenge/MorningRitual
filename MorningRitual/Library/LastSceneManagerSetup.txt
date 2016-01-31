@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/Chris Level-5.unity
+=======
 - path: Assets/Scenes/LlamaTut.unity
+>>>>>>> 013ec93b8886bf9985c70a5c92916ce499c2c4ff
   isLoaded: 1
   isActive: 1

@@ -28,7 +28,7 @@ GameObject:
   - 114: {fileID: 11437206}
   m_Layer: 0
   m_Name: WaterTop
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,7 +138,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 117410}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 5288abdd0e94d1e4ab19639537ec52cd, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.18213579}
@@ -236,9 +236,9 @@ Prefab:
       value: 
       objectReference: {fileID: 2100000, guid: f560c417942a1ca40916aa3ade7b4704, type: 2}
     - target: {fileID: 0}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 5288abdd0e94d1e4ab19639537ec52cd, type: 2}
+      propertyPath: m_TagString
+      value: Water
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 117410}

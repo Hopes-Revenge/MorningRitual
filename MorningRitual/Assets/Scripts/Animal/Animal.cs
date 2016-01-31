@@ -20,6 +20,9 @@ public class Animal : MonoBehaviour {
     protected Animator animator;
     private PlayerController1 animalController;
 
+    public AudioClip[] seatedSounds;
+    public AudioClip[] activatedSounds;
+
     // Use this for initialization
     protected virtual void Awake()
     {
