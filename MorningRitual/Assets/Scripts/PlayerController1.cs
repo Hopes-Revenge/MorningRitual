@@ -48,7 +48,10 @@ public class PlayerController1 : MonoBehaviour {
 		rdBody = GetComponent<Rigidbody2D> ();
         animator = GetComponent<Animator>();
         resetPosition = rdBody.position;
-        gameObject.GetComponent<AudioSource>().PlayOneShot(squakSounds[Random.Range(0, squakSounds.Length)]);
+        if(squakSounds.Length != 0)
+        {
+            gameObject.GetComponent<AudioSource>().PlayOneShot(squakSounds[Random.Range(0, squakSounds.Length)]);
+        }
     }
 
 	

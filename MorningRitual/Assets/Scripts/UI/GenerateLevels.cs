@@ -33,7 +33,7 @@ public class GenerateLevels : MonoBehaviour {
             else
             {
                 sceneButton.GetComponent<Button>().interactable = false;
-                sceneButton.transform.GetChild(1).GetComponent<Image>().enabled = true;
+                sceneButton.transform.GetChild(1).GetComponent<Image>().enabled = false;
             }
             
         }

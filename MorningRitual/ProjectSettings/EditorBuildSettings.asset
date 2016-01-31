@@ -20,6 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JeremyScene.unity
   - enabled: 1
+    path: Assets/Scenes/WaterLevel.unity
+  - enabled: 1
     path: Assets/Scenes/SkyIsTheLimit.unity
   - enabled: 1
     path: Assets/Scenes/Chris Level-1.unity
@@ -31,3 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Chris Level-4.unity
   - enabled: 1
     path: Assets/Scenes/Chris Level-5.unity
+  - enabled: 1
+    path: Assets/Scenes/Chris Level-6.unity
+  - enabled: 1
+    path: Assets/Scenes/Final level.unity

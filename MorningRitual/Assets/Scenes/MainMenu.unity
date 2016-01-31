@@ -1965,7 +1965,7 @@ MonoBehaviour:
   m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
+  m_CellSize: {x: 80, y: 80}
   m_Spacing: {x: 30, y: 30}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -2297,7 +2297,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 565cb28e06dcd0d46b0b27c053cf71f6, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 120
     m_FontStyle: 0
     m_BestFit: 1
@@ -2362,31 +2362,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 56
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 209
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 51
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0.032
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.8167744
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0.23600002
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.9246769
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_Pivot.x
@@ -2529,31 +2529,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -1.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0.3587876
+      value: 0.032
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.052525185
+      value: 0.8167744
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.64121246
+      value: 0.236
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0.11947482
+      value: 0.9246769
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_Pivot.x
@@ -2609,3 +2609,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1929561548 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 158812, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+  m_PrefabInternal: {fileID: 836837800}
+--- !u!82 &1929561554
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1929561548}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e4c6b6880f66e6b478362ba7b0161741, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0

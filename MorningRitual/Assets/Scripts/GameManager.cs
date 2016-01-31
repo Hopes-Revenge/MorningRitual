@@ -150,7 +150,10 @@ public class GameManager : MonoBehaviour {
         }
         else {
 
-            player.GetComponent<AudioSource>().PlayOneShot(player.GetComponent<PlayerController1>().deathSounds[Random.Range(0, player.GetComponent<PlayerController1>().deathSounds.Length)]);
+            if(player != null && player.GetComponent<AudioSource>() != null)
+            {
+                player.GetComponent<AudioSource>().PlayOneShot(player.GetComponent<PlayerController1>().deathSounds[Random.Range(0, player.GetComponent<PlayerController1>().deathSounds.Length)]);
+            }
 
             if (levelRepeatScreen != null)
             {
