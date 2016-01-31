@@ -116,10 +116,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 826301686}
   m_RootOrder: 4
-  m_AnchorMin: {x: 0, y: 0.8062757}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 174.40999, y: -117}
-  m_SizeDelta: {x: -351, y: -71}
+  m_AnchorMin: {x: 0.5167876, y: 0.6894749}
+  m_AnchorMax: {x: 1, y: 0.772}
+  m_AnchoredPosition: {x: -0.54499817, y: -1.5}
+  m_SizeDelta: {x: -1.09, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &56128352
 MonoBehaviour:
@@ -849,11 +849,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 826301686}
-  m_RootOrder: 2
-  m_AnchorMin: {x: 0, y: 0.8062757}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -175, y: -277}
-  m_SizeDelta: {x: -351, y: 89}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0.011150387, y: 0.132}
+  m_AnchorMax: {x: 0.49, y: 0.6482183}
+  m_AnchoredPosition: {x: -3.5, y: 1.5}
+  m_SizeDelta: {x: 9, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &520406449
 MonoBehaviour:
@@ -903,17 +903,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Jeremy Astolfi
+  m_Text: 'Alec Linders
 
-    Alec Linders
+    Jeremy Astolfi
 
     Sasha Gonye
 
-    Bennoni Thomas
-
     Chris Granville
 
-    Madison Smith'
+    Madison Smith
+
+    Bennoni Thomas'
 --- !u!222 &520406451
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1044,10 +1044,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 826301686}
   m_RootOrder: 5
-  m_AnchorMin: {x: 0, y: 0.8062757}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -174.99998, y: -117}
-  m_SizeDelta: {x: -351, y: -71}
+  m_AnchorMin: {x: 0, y: 0.68200004}
+  m_AnchorMax: {x: 0.48321244, y: 0.772}
+  m_AnchoredPosition: {x: 1.7272644, y: 1}
+  m_SizeDelta: {x: 2.454399, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &598516285
 MonoBehaviour:
@@ -1136,8 +1136,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 382742198}
-  - {fileID: 830505485}
   - {fileID: 520406448}
+  - {fileID: 830505485}
   - {fileID: 1484069152}
   - {fileID: 56128351}
   - {fileID: 598516284}
@@ -2107,10 +2107,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 826301686}
   m_RootOrder: 3
-  m_AnchorMin: {x: 0, y: 0.8062757}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 174.41, y: -277}
-  m_SizeDelta: {x: -351, y: 89}
+  m_AnchorMin: {x: 0.5167876, y: 0.132}
+  m_AnchorMax: {x: 1, y: 0.6482183}
+  m_AnchoredPosition: {x: -0.5450134, y: 1.4510002}
+  m_SizeDelta: {x: -1.09, y: 4.0999985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1484069153
 MonoBehaviour:
@@ -2529,31 +2529,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 56
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 209
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 51
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0.3587876
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.052525185
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0.64121246
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.11947482
       objectReference: {fileID: 0}
     - target: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449, type: 2}
       propertyPath: m_Pivot.x
