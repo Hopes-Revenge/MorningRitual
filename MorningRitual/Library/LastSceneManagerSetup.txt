@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Bouncetana.unity
+- path: Assets/Scenes/Chris Level-3.unity
   isLoaded: 1
   isActive: 1

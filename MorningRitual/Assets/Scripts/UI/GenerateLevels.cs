@@ -25,9 +25,9 @@ public class GenerateLevels : MonoBehaviour {
             }
             else
             {
-                sceneButton.GetComponentInChildren<Text>().text = "LOCKED";
                 sceneButton.GetComponent<Button>().interactable = false;
             }
+            
         }
 
     }
