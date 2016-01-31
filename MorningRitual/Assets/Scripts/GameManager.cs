@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
     public UIAnimateState levelWinScreen;
     public UIAnimateState levelRepeatScreen;
     public UIAnimateState levelPauseScreen;
+    public UIAnimateState gameWonScreen;
     public GameObject keyBoardInput;
     public GameObject controllerInput;
 
@@ -50,10 +51,12 @@ public class GameManager : MonoBehaviour {
 
         levelRepeatScreen = Instantiate(levelRepeatScreen) as UIAnimateState;
         levelPauseScreen = Instantiate(levelPauseScreen) as UIAnimateState;
+        gameWonScreen = Instantiate(gameWonScreen) as UIAnimateState;
 
         levelWinScreen.transform.SetParent(canvas.transform, false);
         levelRepeatScreen.transform.SetParent(canvas.transform, false);
         levelPauseScreen.transform.SetParent(canvas.transform, false);
+        gameWonScreen.transform.SetParent(canvas.transform, false);
 
         eventSys = GameObject.FindObjectOfType<EventSystem>();
 
@@ -115,7 +118,15 @@ public class GameManager : MonoBehaviour {
         hasTriggeredEnd = true;
         if (didWin)
         {
-            if (levelWinScreen != null)
+            if (finalLevel == true)
+            {
+                player.GetComponent<AudioSource>().PlayOneShot(player.GetComponent<PlayerController1>().crow);
+                if (gameWonScreen != null)
+                {
+                    gameWonScreen.IsVisible = true;
+                }
+            }
+            else if (levelWinScreen != null)
             {
                 if (foundEgg)
                 {
@@ -139,7 +150,7 @@ public class GameManager : MonoBehaviour {
         }
         else {
 
-            //player.GetComponent<AudioSource>().PlayOneShot(player.GetComponent<PlayerController1>().deathSounds[Random.Range(0, player.GetComponent<PlayerController1>().deathSounds.Length)]);
+            player.GetComponent<AudioSource>().PlayOneShot(player.GetComponent<PlayerController1>().deathSounds[Random.Range(0, player.GetComponent<PlayerController1>().deathSounds.Length)]);
 
             if (levelRepeatScreen != null)
             {
@@ -156,20 +167,7 @@ public class GameManager : MonoBehaviour {
             timeText.text += duration.ToString().Substring(3, 8);
         }
 
-        if (finalLevel == true)
-        {
-
-            if (eventSys != null)
-            {
-                GameObject o = GameObject.FindGameObjectWithTag("DefaultSelect");
-                if (o != null)
-                {
-                    eventSys.SetSelectedGameObject(o);
-                }
-            }
-        }
     }
-    
 
 
     void OnDrawGizmos()
