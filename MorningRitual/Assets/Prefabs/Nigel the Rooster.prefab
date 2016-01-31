@@ -43,6 +43,7 @@ GameObject:
   - 50: {fileID: 5063122}
   - 58: {fileID: 5851494}
   - 95: {fileID: 9592686}
+  - 61: {fileID: 6101160}
   m_Layer: 9
   m_Name: Nigel the Rooster
   m_TagString: Player
@@ -84,7 +85,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.214, y: 0.134, z: 0}
+  m_LocalPosition: {x: 1.1419291, y: 0.043052197, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 462008}
@@ -144,9 +145,23 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.04}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!61 &6101160
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125186}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 5288abdd0e94d1e4ab19639537ec52cd, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.0041177273, y: 0.113628626}
+  serializedVersion: 2
+  m_Size: {x: 0.85176414, y: 0.7727426}
 --- !u!95 &9592686
 Animator:
   serializedVersion: 3
