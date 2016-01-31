@@ -48,7 +48,10 @@ public class Pig : MonoBehaviour {
         {
             isSinking = true;
             sunk = true;
-            //gameObject.GetComponent<AudioSource>().PlayOneShot(jumpSounds[Random.Range(0, jumpSounds.Length)]);
+            if (!gameObject.GetComponent<AudioSource>().isPlaying)
+            {
+                gameObject.GetComponent<AudioSource>().PlayOneShot(jumpSounds[Random.Range(0, jumpSounds.Length)]);
+            }
         }
     }
     

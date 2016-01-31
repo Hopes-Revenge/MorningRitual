@@ -46,6 +46,7 @@ GameObject:
   - 61: {fileID: 6117460}
   - 95: {fileID: 9552420}
   - 114: {fileID: 11434738}
+  - 82: {fileID: 8244180}
   m_Layer: 11
   m_Name: Doge
   m_TagString: Untagged
@@ -150,6 +151,80 @@ BoxCollider2D:
   m_Offset: {x: 0.028856369, y: 0.005345412}
   serializedVersion: 2
   m_Size: {x: 0.5353595, y: 0.37519133}
+--- !u!82 &8244180
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134960}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &9552420
 Animator:
   serializedVersion: 3
@@ -180,8 +255,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seatTransform: {fileID: 410734}
   jumpOffForce: 1
-  seatedSounds: []
-  activatedSounds: []
+  seatedSounds:
+  - {fileID: 8300000, guid: 9c96ed9393e0e3146a2044edac0228ed, type: 3}
+  - {fileID: 8300000, guid: 9d583dca24a6ada48bd55f253cd208da, type: 3}
+  - {fileID: 8300000, guid: 8ed1080cb5da43f4484c92cc93c87cef, type: 3}
+  - {fileID: 8300000, guid: 5f08132839db89647b67c0685f3999af, type: 3}
+  - {fileID: 8300000, guid: 321982b267115c94a9de82360a6e3bb5, type: 3}
+  - {fileID: 8300000, guid: 62f8ab3bae140e84ab35ec82fbebf1ad, type: 3}
+  - {fileID: 8300000, guid: aae34a8359b9b714bae0f60d97bdd97f, type: 3}
+  - {fileID: 8300000, guid: 847c20344d8cc454885f75627d4a7edf, type: 3}
+  - {fileID: 8300000, guid: 3848a66d21a353148ae1944f4c7f49f7, type: 3}
+  activatedSounds:
+  - {fileID: 8300000, guid: d55bee3f48bd8c54184d0c36e3f543c3, type: 3}
+  - {fileID: 8300000, guid: 06a8b4308fa46a444a45668c86bd088f, type: 3}
+  - {fileID: 8300000, guid: 1668a08c20fd1a64dbe85d9fd04ed2ff, type: 3}
+  - {fileID: 8300000, guid: 592da557f8feb5a4791c669a2efa5dc3, type: 3}
+  - {fileID: 8300000, guid: b4477dae3ff3415478e641dc838d3878, type: 3}
+  - {fileID: 8300000, guid: e0361e55beae2ae4989fb4165c0611c3, type: 3}
+  - {fileID: 8300000, guid: aa6817681d896ac4eb2c52b4356c687c, type: 3}
+  - {fileID: 8300000, guid: b9591b251eac86047bd56f107e9f1630, type: 3}
+  - {fileID: 8300000, guid: eebed87537601344fbfd6b87f9615bca, type: 3}
 --- !u!114 &11448578
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -245,8 +338,28 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: seatedSounds.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: activatedSounds.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: panLevelCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
