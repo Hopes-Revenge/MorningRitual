@@ -2,6 +2,10 @@
 using System.Collections;
 
 public class PlayerController1 : MonoBehaviour {
+
+    public bool hasJumpAnimation = false;
+    public bool hasWalkAnimation = false;
+
 	private bool facingRight = true;
 	public float speed = 5.0f;
 	public float maxSpeed = 5f;
@@ -62,7 +66,7 @@ public class PlayerController1 : MonoBehaviour {
 			Reset();
 		}
 
-        if (animator != null)
+        if (animator != null && hasJumpAnimation)
         {
             animator.SetBool("IsJumping", rdBody.velocity.y > 0.2f);
         }
@@ -73,7 +77,7 @@ public class PlayerController1 : MonoBehaviour {
 		onGround = Physics2D.OverlapCircle (tempV, groundRadius, groundObject);
 
 		float move = Input.GetAxis ("Horizontal");
-        if (animator != null)
+        if (animator != null && hasWalkAnimation)
         {
             animator.SetBool("IsWalking", Mathf.Abs(move) > 0.2f);
         }
@@ -110,7 +114,7 @@ public class PlayerController1 : MonoBehaviour {
 
     void OnDisable()
     {
-        if (animator != null)
+        if (animator != null && hasWalkAnimation && hasJumpAnimation)
         {
             animator.SetBool("IsJumping", false);
             animator.SetBool("IsWalking", false);

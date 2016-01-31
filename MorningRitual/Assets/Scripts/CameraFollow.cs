@@ -44,16 +44,6 @@ public class CameraFollow : MonoBehaviour
         Vector3 pos = transform.position;
         pos.x = Mathf.Lerp(transform.position.x, followTransform.position.x, Time.fixedDeltaTime * applySpeed);
         pos.y = Mathf.Lerp(transform.position.y, followTransform.position.y, Time.fixedDeltaTime * applySpeed);
-        /*if (Mathf.Abs(followTransform.position.y - transform.position.y + yHeight) > ySnap)
-        {
-            float y = followTransform.position.y;
-            //pos.y = Mathf.Lerp(transform.position.y, y + ySnap, Time.fixedDeltaTime * Mathf.Abs(y - transform.position.y + yHeight));
-        }
-        else
-        {
-            yHeight += 1;
-            transform.position = new Vector2(transform.position.x, followTransform.position.y + ySnap);
-        }*/
         transform.position = pos;
         LockToBounds();
     }
@@ -65,8 +55,18 @@ public class CameraFollow : MonoBehaviour
         Vector2 max = manager.max;
         Vector3 pos = transform.position;
         float width = camera.orthographicSize * camera.aspect;
-        pos.x = Mathf.Clamp(pos.x, min.x + width, max.x - width);
-        pos.y = Mathf.Clamp(pos.y, min.y + camera.orthographicSize, max.y - camera.orthographicSize);
+        if(min.x + width > max.x - width)
+        {
+            pos.x = (max.x - min.x) / 2.0f;
+        } else {
+            pos.x = Mathf.Clamp(pos.x, min.x + width, max.x - width);
+        }
+        if(min.y + camera.orthographicSize > max.y - camera.orthographicSize)
+        {
+            pos.y = (min.y - max.y) / 2.0f;
+        } else {
+            pos.y = Mathf.Clamp(pos.y, min.y + camera.orthographicSize, max.y - camera.orthographicSize);
+        }
         transform.position = pos;
     }
 }
