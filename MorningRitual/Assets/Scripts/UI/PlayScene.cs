@@ -12,9 +12,9 @@ public class PlayScene : MonoBehaviour {
         if(useNumberSet)
         {
             int index = SceneManager.GetActiveScene().buildIndex + numberSetAdd;
-            SceneManager.LoadScene(index, LoadSceneMode.Single);
+            SceneManager.LoadSceneAsync(index, LoadSceneMode.Single);
         } else {
-            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+            SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
         }
     }
 }

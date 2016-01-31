@@ -40,7 +40,6 @@ public class Animal : MonoBehaviour {
             {
                 if(animator != null)
                 {
-                    Debug.Log("HEY");
                     animator.SetTrigger("Activate");
                 }
                 Activated();

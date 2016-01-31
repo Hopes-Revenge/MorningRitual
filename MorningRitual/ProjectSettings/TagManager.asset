@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Water
-  - New Tag
+  - Garbage
+  - Player
   layers:
   - Default
   - TransparentFX
@@ -15,10 +15,10 @@ TagManager:
   - UI
   - 
   - 
-  - Ground
-  - Player
-  - Animal
-  - Dog
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
