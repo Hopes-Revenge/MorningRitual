@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     public Canvas canvas;
     public UIAnimateState levelWinScreen;
     public UIAnimateState levelRepeatScreen;
+    public UIAnimateState levelPauseScreen;
     public GameObject[] instatiate;
     public bool foundEgg = false;
 
@@ -29,14 +30,21 @@ public class GameManager : MonoBehaviour {
         levelWinScreen = Instantiate(levelWinScreen) as UIAnimateState;
         timeText = levelWinScreen.transform.FindChild("MidPanel").GetComponentInChildren<Text>();
         levelRepeatScreen = Instantiate(levelRepeatScreen) as UIAnimateState;
+        levelPauseScreen = Instantiate(levelPauseScreen) as UIAnimateState;
 
         levelWinScreen.transform.SetParent(canvas.transform, false);
         levelRepeatScreen.transform.SetParent(canvas.transform, false);
+        levelPauseScreen.transform.SetParent(canvas.transform, false);
     }
 
     void Update()
     {
         levelTime += Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            levelPauseScreen.IsVisible = true;
+        }
     }
 
     public void TriggerLevelEnd(bool didWin)
