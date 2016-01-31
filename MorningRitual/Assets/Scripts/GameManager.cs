@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     public Canvas canvas;
     public UIAnimateState levelWinScreen;
     public UIAnimateState levelRepeatScreen;
+    public UIAnimateState levelPauseScreen;
     public GameObject[] instatiate;
     public bool foundEgg = false;
 
@@ -14,6 +15,8 @@ public class GameManager : MonoBehaviour {
     public Vector2 min;
     public Vector2 max;
 
+    private Transform foundEggPanel;
+    private Transform notFoundEggPanel;
     private Text timeText;
     private bool hasTriggeredEnd = false;
     private float levelTime = 0;
@@ -27,21 +30,56 @@ public class GameManager : MonoBehaviour {
 
         canvas = Instantiate(canvas) as Canvas;
         levelWinScreen = Instantiate(levelWinScreen) as UIAnimateState;
-        timeText = levelWinScreen.transform.FindChild("MidPanel").GetComponentInChildren<Text>();
+        Transform midPanel = levelWinScreen.transform.FindChild("MidPanel");
+        if(midPanel)
+        {
+            timeText = midPanel.GetComponentInChildren<Text>();
+
+            Transform eggPanel = midPanel.FindChild("GoldenEggPanel");
+            if(eggPanel)
+            {
+                foundEggPanel = eggPanel.FindChild("FoundPanel");
+                notFoundEggPanel = eggPanel.FindChild("NotFoundPanel");
+            }
+        }
+
         levelRepeatScreen = Instantiate(levelRepeatScreen) as UIAnimateState;
+        levelPauseScreen = Instantiate(levelPauseScreen) as UIAnimateState;
 
         levelWinScreen.transform.SetParent(canvas.transform, false);
         levelRepeatScreen.transform.SetParent(canvas.transform, false);
+        levelPauseScreen.transform.SetParent(canvas.transform, false);
     }
 
     void Update()
     {
         levelTime += Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            levelPauseScreen.IsVisible = true;
+        }
     }
 
     public void TriggerLevelEnd(bool didWin)
     {
         if (hasTriggeredEnd) return;
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if(player != null)
+        {
+            PlayerController1 controller = player.GetComponent<PlayerController1>();
+            Rigidbody2D body = player.GetComponent<Rigidbody2D>();
+            if(controller != null)
+            {
+                controller.enabled = false;
+            }
+            if(body != null)
+            {
+                body.velocity = new Vector2(0, body.velocity.y);
+            }
+        }
+
         hasTriggeredEnd = true;
         if(didWin)
         {
@@ -54,6 +92,14 @@ public class GameManager : MonoBehaviour {
                 PlayerPrefs.SetInt("Highest Level", UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
                 PlayerPrefs.Save();
                 levelWinScreen.IsVisible = true;
+                if(foundEggPanel != null)
+                {
+                    foundEggPanel.gameObject.SetActive(foundEgg);
+                }
+                if (notFoundEggPanel != null)
+                {
+                    notFoundEggPanel.gameObject.SetActive(!foundEgg);
+                }
             } else {
                 Debug.Log("HEY! Attach a level win screen please.");
             }

@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Garbage
+  - Player
+  - Grass
+  - Water
+  - LoadScreen
   layers:
   - Default
   - TransparentFX
@@ -13,10 +18,10 @@ TagManager:
   - UI
   - 
   - 
-  - Ground
-  - Player
-  - Animal
-  - Dog
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -40,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UITop
+    uniqueID: 1107882885
     locked: 0

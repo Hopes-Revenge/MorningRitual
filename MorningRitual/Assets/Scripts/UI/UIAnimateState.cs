@@ -5,6 +5,8 @@ using System.Collections;
 public class UIAnimateState : MonoBehaviour
 {
     public bool startVisbile = true;
+    public bool shouldTriggerOn = false;
+    public bool shouldTriggerOff = false;
     private Animator animator;
 
     private bool isVisible = false;
@@ -18,6 +20,20 @@ public class UIAnimateState : MonoBehaviour
         {
             animator.speed = float.MaxValue;
             animator.SetBool("IsVisible", isVisible);
+        }
+    }
+
+    void Update()
+    {
+        if(shouldTriggerOn)
+        {
+            shouldTriggerOn = false;
+            isVisible = true;
+            UpdateVisibility();
+        } else if (shouldTriggerOff) {
+            shouldTriggerOff = false;
+            isVisible = false;
+            UpdateVisibility();
         }
     }
 

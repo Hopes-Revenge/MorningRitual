@@ -13,6 +13,8 @@ public class Pig : MonoBehaviour {
     float q = 0.0f;
     float t = 0.0f;
 
+    public AudioClip[] jumpSounds;
+
     // Use this for initialization
     void Start ()
     {
@@ -46,6 +48,7 @@ public class Pig : MonoBehaviour {
         {
             isSinking = true;
             sunk = true;
+            //gameObject.GetComponent<AudioSource>().PlayOneShot(jumpSounds[Random.Range(0, jumpSounds.Length)]);
         }
     }
     

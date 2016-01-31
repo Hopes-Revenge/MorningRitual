@@ -1,8 +1,15 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/SkyIsTheLimit.unity
 =======
 - path: Assets/Scenes/JeremyScene.unity
 >>>>>>> 95bbefb61d554d79279466185dad4be40a82ceb8
+=======
+- path: Assets/Scenes/Chris Level-5.unity
+=======
+- path: Assets/Scenes/GoatTutorial.unity
+>>>>>>> baaa312fcffc1b11ea8091bab78ea3032e741f3e
+>>>>>>> 7332640f97682e67c70cd2306eab4720fbb00f4f
   isLoaded: 1
   isActive: 1

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 [ExecuteInEditMode]
 [RequireComponent(typeof(SpriteRenderer))]
@@ -9,13 +10,13 @@ public class TileSpriteHelper : MonoBehaviour {
     public float tileScale = 1.0f;
 
     private SpriteRenderer render;
-    private MaterialPropertyBlock block = new MaterialPropertyBlock();
+    private MaterialPropertyBlock block;
 
 	// Use this for initialization
-	void Awake () {
+	void Start () {
         render = GetComponent<SpriteRenderer>();
+        block = new MaterialPropertyBlock();
         ApplyChanges();
-
     }
 	
 	// Update is called once per frame

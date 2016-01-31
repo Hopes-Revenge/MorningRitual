@@ -104,12 +104,12 @@ BoxCollider2D:
   m_GameObject: {fileID: 165722}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5288abdd0e94d1e4ab19639537ec52cd, type: 2}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0.113054276, y: 0.19632053}
+  m_Offset: {x: 0.11802673, y: 0.19632053}
   serializedVersion: 2
-  m_Size: {x: 1.0558255, y: 0.5300105}
+  m_Size: {x: 1.3244156, y: 0.5300105}
 --- !u!114 &11499662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,6 +164,10 @@ Prefab:
       propertyPath: sinkScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 5288abdd0e94d1e4ab19639537ec52cd, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165722}

@@ -11,17 +11,22 @@ public class Animal : MonoBehaviour {
     [Header("Configure")]
     public float jumpOffForce = 1;
 
-    private bool isSeated = false;
+    protected bool isSeated = false;
     private Transform playerTransform;
     private PlayerController1 playerController;
     private float originalScale = 1;
 
-    private Animator animator;
+    private Rigidbody2D body;
+    protected Animator animator;
     private PlayerController1 animalController;
+
+    public AudioClip[] seatedSounds;
+    public AudioClip[] activatedSounds;
 
     // Use this for initialization
     protected virtual void Awake()
     {
+        body = GetComponent<Rigidbody2D>();
         animalController = GetComponent<PlayerController1>();
         animalController.enabled = false;
         animator = GetComponent<Animator>();
@@ -35,7 +40,6 @@ public class Animal : MonoBehaviour {
             {
                 if(animator != null)
                 {
-                    Debug.Log("HEY");
                     animator.SetTrigger("Activate");
                 }
                 Activated();
@@ -53,6 +57,8 @@ public class Animal : MonoBehaviour {
                 Unseated();
                 return;
             }
+        } else if(body != null) {
+            body.velocity = new Vector2(0, body.velocity.y);
         }
 	}
 
