@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
 
     void Awake()
     {
-        for(int i = 0; i < instatiate.Length; i++)
+        for (int i = 0; i < instatiate.Length; i++)
         {
             Instantiate(instatiate[i]);
         }
@@ -36,12 +36,12 @@ public class GameManager : MonoBehaviour {
         canvas = Instantiate(canvas) as Canvas;
         levelWinScreen = Instantiate(levelWinScreen) as UIAnimateState;
         Transform midPanel = levelWinScreen.transform.FindChild("MidPanel");
-        if(midPanel)
+        if (midPanel)
         {
             timeText = midPanel.GetComponentInChildren<Text>();
 
             Transform eggPanel = midPanel.FindChild("GoldenEggPanel");
-            if(eggPanel)
+            if (eggPanel)
             {
                 foundEggPanel = eggPanel.FindChild("FoundPanel");
                 notFoundEggPanel = eggPanel.FindChild("NotFoundPanel");
@@ -93,19 +93,19 @@ public class GameManager : MonoBehaviour {
         if (hasTriggeredEnd) return;
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if(player != null)
+        if (player != null)
         {
             PlayerController1 controller = player.GetComponent<PlayerController1>();
             Rigidbody2D body = player.GetComponent<Rigidbody2D>();
-            if(controller != null)
+            if (controller != null)
             {
                 controller.enabled = false;
             }
-            if(body != null)
+            if (body != null)
             {
                 Vector2 velo = body.velocity;
-                velo.x = 0; 
-                if(velo.y > 0)
+                velo.x = 0;
+                if (velo.y > 0)
                 {
                     velo.y = 0;
                 }
@@ -113,9 +113,9 @@ public class GameManager : MonoBehaviour {
             }
         }
         hasTriggeredEnd = true;
-        if(didWin)
+        if (didWin)
         {
-            if(levelWinScreen != null)
+            if (levelWinScreen != null)
             {
                 if (foundEgg)
                 {
@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour {
                 PlayerPrefs.SetInt("Highest Level", UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
                 PlayerPrefs.Save();
                 levelWinScreen.IsVisible = true;
-                if(foundEggPanel != null)
+                if (foundEggPanel != null)
                 {
                     foundEggPanel.gameObject.SetActive(foundEgg);
                 }
@@ -132,10 +132,12 @@ public class GameManager : MonoBehaviour {
                 {
                     notFoundEggPanel.gameObject.SetActive(!foundEgg);
                 }
-            } else {
+            }
+            else {
                 Debug.Log("HEY! Attach a level win screen please.");
             }
-        } else {
+        }
+        else {
 
             //player.GetComponent<AudioSource>().PlayOneShot(player.GetComponent<PlayerController1>().deathSounds[Random.Range(0, player.GetComponent<PlayerController1>().deathSounds.Length)]);
 
@@ -148,34 +150,32 @@ public class GameManager : MonoBehaviour {
                 Debug.Log("HEY! Attach a level repeate screen please.");
             }
         }
-        if(timeText != null)
+        if (timeText != null)
         {
             System.TimeSpan duration = new System.TimeSpan(0, 0, 0, (int)levelTime, (int)(levelTime * 100 - ((int)levelTime)));
             timeText.text += duration.ToString().Substring(3, 8);
         }
-<<<<<<< HEAD
 
-        if(finalLevel == true)
+        if (finalLevel == true)
         {
 
-=======
-        if (eventSys != null)
-        {
-            GameObject o = GameObject.FindGameObjectWithTag("DefaultSelect");
-            if (o != null)
+            if (eventSys != null)
             {
-                eventSys.SetSelectedGameObject(o);
+                GameObject o = GameObject.FindGameObjectWithTag("DefaultSelect");
+                if (o != null)
+                {
+                    eventSys.SetSelectedGameObject(o);
+                }
             }
->>>>>>> eeedeb6ea0398cd1364d87d56e4764af9ae3c8e0
         }
     }
 
-
-    void OnDrawGizmos()
+        void OnDrawGizmos()
     {
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawCube(min, Vector3.one * 0.2f);
-        Gizmos.DrawCube(max, Vector3.one * 0.2f);
-        Gizmos.DrawWireCube((max - min) / 2 + min, max - min);
-    }
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawCube(min, Vector3.one * 0.2f);
+            Gizmos.DrawCube(max, Vector3.one * 0.2f);
+            Gizmos.DrawWireCube((max - min) / 2 + min, max - min);
+        }
+    
 }
