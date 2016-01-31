@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/SkyIsTheLimit.unity
+=======
+- path: Assets/Scenes/JeremyScene.unity
+>>>>>>> 95bbefb61d554d79279466185dad4be40a82ceb8
   isLoaded: 1
   isActive: 1
