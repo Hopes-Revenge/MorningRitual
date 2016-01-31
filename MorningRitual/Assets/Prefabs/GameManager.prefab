@@ -43,6 +43,9 @@ MonoBehaviour:
   levelWinScreen: {fileID: 11430802, guid: 25c1761c8d3ddc24887de7081e53c9ab, type: 2}
   levelRepeatScreen: {fileID: 11461036, guid: 6df11c03f471d114fb9833808bd9b27f, type: 2}
   levelPauseScreen: {fileID: 11461036, guid: 176afa8b650e575429bcd7e81d23967f, type: 2}
+  gameWonScreen: {fileID: 11430802, guid: 9e1cecebc0719c04e9e95d390e443278, type: 2}
+  keyBoardInput: {fileID: 0}
+  controllerInput: {fileID: 0}
   instatiate:
   - {fileID: 143538, guid: da254408fd8c1674aa3a5c162a98da3a, type: 2}
   - {fileID: 180710, guid: 5deed6ff0add79b49a6a94763a46d946, type: 2}
@@ -72,6 +75,11 @@ Prefab:
       propertyPath: levelPauseScreen
       value: 
       objectReference: {fileID: 11461036, guid: 176afa8b650e575429bcd7e81d23967f,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: gameWonScreen
+      value: 
+      objectReference: {fileID: 11430802, guid: 9e1cecebc0719c04e9e95d390e443278,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
