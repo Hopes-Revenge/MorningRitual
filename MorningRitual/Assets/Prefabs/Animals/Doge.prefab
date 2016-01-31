@@ -44,6 +44,7 @@ GameObject:
   - 114: {fileID: 11448578}
   - 61: {fileID: 6161190}
   - 114: {fileID: 11432686}
+  - 58: {fileID: 5876500}
   m_Layer: 11
   m_Name: Doge
   m_TagString: Untagged
@@ -58,7 +59,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -0.247, y: 0.204, z: 0}
+=======
+  m_LocalPosition: {x: -0.015, y: 0.354, z: 0}
+>>>>>>> 4fd1506cd3d06d7c2da36173e09329e2c6d4e052
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 457240}
@@ -106,6 +111,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &5876500
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134960}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.44}
+  serializedVersion: 2
+  m_Radius: 0.2848301
 --- !u!61 &6156080
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -131,9 +150,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.0029308957, y: -0.39083642}
+  m_Offset: {x: 0.0029315948, y: -0.36009786}
   serializedVersion: 2
-  m_Size: {x: 1.6305099, y: 0.6542097}
+  m_Size: {x: 1.6305099, y: 0.5927325}
 --- !u!114 &11432686
 MonoBehaviour:
   m_ObjectHideFlags: 1
