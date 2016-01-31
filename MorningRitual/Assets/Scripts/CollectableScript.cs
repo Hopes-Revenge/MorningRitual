@@ -5,10 +5,13 @@ public class CollectableScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print("Here.");
+        //find the GameManager
+        GameManager gm = GameObject.FindObjectOfType<GameManager>();
 
-        //change the bool here
+        //set the found egg = true
+        gm.foundEgg = true;
+
+        //destroy the collectable
         Destroy(this.gameObject);
-
     }
 }
