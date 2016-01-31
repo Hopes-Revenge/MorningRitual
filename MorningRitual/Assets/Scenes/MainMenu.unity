@@ -137,6 +137,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startVisbile: 0
+  shouldTriggerOn: 0
+  shouldTriggerOff: 0
 --- !u!95 &226566632
 Animator:
   serializedVersion: 3
@@ -869,6 +871,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startVisbile: 0
+  shouldTriggerOn: 0
+  shouldTriggerOff: 0
 --- !u!95 &826301688
 Animator:
   serializedVersion: 3
@@ -927,6 +931,92 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22454212, guid: d4822d44a0032314bb28d131e3dc5449,
     type: 2}
   m_PrefabInternal: {fileID: 1906394011}
+--- !u!1001 &836837800
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22483448, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11445772, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+      propertyPath: minLoadTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f6c2dbccf9aac8a4fbe3333a36f364a6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &947921987
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,6 +2153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startVisbile: 1
+  shouldTriggerOn: 0
+  shouldTriggerOff: 0
 --- !u!95 &1876600090
 Animator:
   serializedVersion: 3

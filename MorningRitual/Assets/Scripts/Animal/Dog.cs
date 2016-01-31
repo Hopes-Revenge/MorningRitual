@@ -13,7 +13,6 @@ public class Dog : Animal
         if (other.gameObject.tag == "Water")
         {
             //debug message
-            print("Here.");
             inWater = true;
 
         }

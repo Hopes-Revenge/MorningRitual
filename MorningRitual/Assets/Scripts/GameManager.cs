@@ -64,6 +64,22 @@ public class GameManager : MonoBehaviour {
     public void TriggerLevelEnd(bool didWin)
     {
         if (hasTriggeredEnd) return;
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if(player != null)
+        {
+            PlayerController1 controller = player.GetComponent<PlayerController1>();
+            Rigidbody2D body = player.GetComponent<Rigidbody2D>();
+            if(controller != null)
+            {
+                controller.enabled = false;
+            }
+            if(body != null)
+            {
+                body.velocity = new Vector2(0, body.velocity.y);
+            }
+        }
+
         hasTriggeredEnd = true;
         if(didWin)
         {

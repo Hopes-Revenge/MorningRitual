@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Garbage
   - Player
+  - Grass
+  - Water
+  - LoadScreen
   layers:
   - Default
   - TransparentFX
@@ -42,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UITop
+    uniqueID: 1107882885
     locked: 0
