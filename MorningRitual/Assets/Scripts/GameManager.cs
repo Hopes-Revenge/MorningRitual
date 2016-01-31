@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public void TriggerLevelEnd(bool didWin)
+    public void TriggerLevelEnd(bool didWin, bool finalLevel)
     {
         if (hasTriggeredEnd) return;
 
@@ -153,6 +153,12 @@ public class GameManager : MonoBehaviour {
             System.TimeSpan duration = new System.TimeSpan(0, 0, 0, (int)levelTime, (int)(levelTime * 100 - ((int)levelTime)));
             timeText.text += duration.ToString().Substring(3, 8);
         }
+<<<<<<< HEAD
+
+        if(finalLevel == true)
+        {
+
+=======
         if (eventSys != null)
         {
             GameObject o = GameObject.FindGameObjectWithTag("DefaultSelect");
@@ -160,6 +166,7 @@ public class GameManager : MonoBehaviour {
             {
                 eventSys.SetSelectedGameObject(o);
             }
+>>>>>>> eeedeb6ea0398cd1364d87d56e4764af9ae3c8e0
         }
     }
 

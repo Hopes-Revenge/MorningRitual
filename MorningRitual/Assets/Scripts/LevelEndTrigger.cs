@@ -5,6 +5,7 @@ using System.Collections;
 public class LevelEndTrigger : MonoBehaviour
 {
     public bool doesMakeWin = false;
+    public bool finalLevel = false;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,7 +14,7 @@ public class LevelEndTrigger : MonoBehaviour
         if (root.CompareTag("Player"))
         {
             GameManager manager = GameManager.FindObjectOfType<GameManager>();
-            manager.TriggerLevelEnd(doesMakeWin);
+            manager.TriggerLevelEnd(doesMakeWin, finalLevel);
         }
     }
 }
