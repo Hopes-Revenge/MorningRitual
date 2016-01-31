@@ -42,9 +42,10 @@ GameObject:
   - 61: {fileID: 6156080}
   - 50: {fileID: 5067148}
   - 114: {fileID: 11448578}
-  - 61: {fileID: 6161190}
-  - 114: {fileID: 11432686}
   - 58: {fileID: 5876500}
+  - 61: {fileID: 6117460}
+  - 95: {fileID: 9552420}
+  - 114: {fileID: 11434738}
   m_Layer: 11
   m_Name: Doge
   m_TagString: Untagged
@@ -83,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.28, y: -0.31018713, z: 0}
+  m_LocalPosition: {x: 15.12, y: -0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412250}
@@ -121,6 +122,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.44}
   serializedVersion: 2
   m_Radius: 0.2848301
+--- !u!61 &6117460
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134960}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.00628376, y: -0.3539939}
+  serializedVersion: 2
+  m_Size: {x: 1.6157736, y: 0.60210705}
 --- !u!61 &6156080
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -135,21 +150,24 @@ BoxCollider2D:
   m_Offset: {x: 0.028856369, y: 0.005345412}
   serializedVersion: 2
   m_Size: {x: 0.5353595, y: 0.37519133}
---- !u!61 &6161190
-BoxCollider2D:
+--- !u!95 &9552420
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134960}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0.0029315948, y: -0.36009786}
-  serializedVersion: 2
-  m_Size: {x: 1.6305099, y: 0.5927325}
---- !u!114 &11432686
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ad1195c4860774459b8b0bf0d1230ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11434738
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -157,11 +175,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 134960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 126eb5f5e70d9a846b4a37d868d25058, type: 3}
+  m_Script: {fileID: 11500000, guid: dba89fb41fc492a409206c2e88bcbde2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   seatTransform: {fileID: 410734}
   jumpOffForce: 1
+  seatedSounds: []
+  activatedSounds: []
 --- !u!114 &11448578
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,6 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281898b010b08e24b83565d52e906a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasJumpAnimation: 0
+  hasWalkAnimation: 0
   speed: 5
   maxSpeed: 5
   jumpSpeed: 300
@@ -180,7 +202,7 @@ MonoBehaviour:
   groundRadius: 0.1
   groundObject:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512
   resetPosition: {x: 0, y: 0, z: 0}
   resetLevel: 0
   dead: 0
