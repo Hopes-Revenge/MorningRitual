@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2daadda69ad55384fa3a501e8194f5e9
-timeCreated: 1454137351
+timeCreated: 1454199542
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -27,8 +27,17 @@ TextureImporter:
     21300040: tileSprites2_20
     21300042: tileSprites2_21
     21300044: tileSprites2_22
-    21300046: tileSprites2_24
-    21300048: tileSprites2_25
+    21300046: tileSprites2_23
+    21300048: tileSprites2_24
+    21300050: tileSprites2_25
+    21300052: tileSprites2_26
+    21300054: tileSprites2_27
+    21300056: tileSprites2_28
+    21300058: tileSprites2_29
+    21300060: tileSprites2_30
+    21300062: tileSprites2_31
+    21300064: tileSprites2_32
+    21300066: tileSprites2_33
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -330,10 +339,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
+      - - {x: -10, y: 13}
+        - {x: -12, y: 11}
+        - {x: -12, y: 10}
+        - {x: -9, y: 7}
+        - {x: -6, y: 7}
+        - {x: -4, y: 9}
+        - {x: -4, y: 11}
+        - {x: -6, y: 13}
     - name: tileSprites2_17
       rect:
         serializedVersion: 2
@@ -399,99 +412,115 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 193
+        y: 192
         width: 32
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -15, y: 28.5}
-        - {x: -16, y: 26.5}
-        - {x: -16, y: -9.5}
-        - {x: 14, y: -9.5}
-        - {x: 16, y: -7.5}
-        - {x: 16, y: 26.5}
-        - {x: 15, y: 28.5}
+      - - {x: -15, y: 29}
+        - {x: -16, y: 28}
+        - {x: -16, y: -9}
+        - {x: 11, y: -9}
+        - {x: 16, y: -8}
+        - {x: 16, y: 27}
+        - {x: 15, y: 29}
     - name: tileSprites2_21
       rect:
         serializedVersion: 2
         x: 32
-        y: 193
+        y: 192
         width: 32
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -1, y: 25.5}
-        - {x: -11, y: 25.5}
-        - {x: -15, y: 22.5}
-        - {x: -15, y: 2.5}
-        - {x: -11, y: -6.5}
-        - {x: 7, y: -6.5}
-        - {x: 11, y: -1.5}
-        - {x: 11, y: 14.5}
-        - {x: 7, y: 22.5}
+      - - {x: -1, y: 26}
+        - {x: -11, y: 26}
+        - {x: -15, y: 23}
+        - {x: -15, y: 3}
+        - {x: -11, y: -6}
+        - {x: 7, y: -6}
+        - {x: 11, y: -1}
+        - {x: 11, y: 15}
+        - {x: 7, y: 23}
     - name: tileSprites2_22
       rect:
         serializedVersion: 2
         x: 64
-        y: 193
+        y: 192
         width: 64
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -13, y: 24.5}
-        - {x: -22, y: 14.5}
-        - {x: -24, y: 1.5}
-        - {x: -24, y: -7.5}
-        - {x: -18, y: -13.5}
-        - {x: 15, y: -13.5}
-        - {x: 27, y: -8.5}
-        - {x: 27, y: 20.5}
-        - {x: 18, y: 24.5}
+      - - {x: -13, y: 25}
+        - {x: -22, y: 15}
+        - {x: -24, y: 2}
+        - {x: -24, y: -7}
+        - {x: -18, y: -13}
+        - {x: 15, y: -13}
+        - {x: 27, y: -8}
+        - {x: 27, y: 21}
+        - {x: 18, y: 25}
     - name: tileSprites2_24
       rect:
         serializedVersion: 2
         x: 128
         y: 192
         width: 32
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 31.5}
-        - {x: -16, y: -8.5}
-        - {x: -4, y: -8.5}
-        - {x: 0, y: -7.5}
-        - {x: 16, y: 0.5}
-        - {x: 16, y: 25.5}
-        - {x: -7, y: 31.5}
+      - - {x: -16, y: 31}
+        - {x: -16, y: -9}
+        - {x: -4, y: -9}
+        - {x: 0, y: -8}
+        - {x: 16, y: 0}
+        - {x: 16, y: 25}
+        - {x: -7, y: 31}
     - name: tileSprites2_25
       rect:
         serializedVersion: 2
         x: 160
-        y: 193
+        y: 192
         width: 32
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 28.5}
-        - {x: -16, y: 25.5}
-        - {x: -16, y: 15.5}
-        - {x: -10, y: 14.5}
-        - {x: -16, y: 8.5}
-        - {x: -16, y: -0.5}
-        - {x: 12, y: -9.5}
-        - {x: 14, y: -9.5}
-        - {x: 16, y: -7.5}
-        - {x: 16, y: 28.5}
+      - - {x: 0, y: 29}
+        - {x: -16, y: 26}
+        - {x: -16, y: 16}
+        - {x: -10, y: 15}
+        - {x: -16, y: 9}
+        - {x: -16, y: 0}
+        - {x: 12, y: -9}
+        - {x: 14, y: -9}
+        - {x: 16, y: -7}
+        - {x: 16, y: 29}
+    - name: tileSprites2_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 32}
+        - {x: -16, y: 26}
+        - {x: -16, y: -26}
+        - {x: 16, y: -26}
+        - {x: 16, y: 32}
     outline: []
   spritePackingTag: 
   userData: 

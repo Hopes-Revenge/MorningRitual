@@ -116,6 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81fc3c274833404faec8cbdf86896b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sinkScale: 1
+  raiseScale: 0.2
 --- !u!212 &21244548
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -152,7 +154,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: sinkScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165722}
