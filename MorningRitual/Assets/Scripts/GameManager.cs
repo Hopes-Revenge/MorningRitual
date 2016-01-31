@@ -77,8 +77,8 @@ public class GameManager : MonoBehaviour {
         }
         if(timeText != null)
         {
-            System.TimeSpan duration = new System.TimeSpan(0, 0, 0, (int)levelTime);
-            timeText.text += duration.ToString().Substring(3);
+            System.TimeSpan duration = new System.TimeSpan(0, 0, 0, (int)levelTime, (int)(levelTime * 100 - ((int)levelTime)));
+            timeText.text += duration.ToString().Substring(3, 8);
         }
     }
 
