@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Dog Tutorial.unity
+- path: Assets/Scenes/GoatTutorial.unity
   isLoaded: 1
   isActive: 1
