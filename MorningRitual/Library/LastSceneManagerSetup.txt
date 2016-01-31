@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Chris Level-5.unity
-=======
-- path: Assets/Scenes/GoatTutorial.unity
->>>>>>> baaa312fcffc1b11ea8091bab78ea3032e741f3e
+- path: Assets/Scenes/Final level.unity
   isLoaded: 1
   isActive: 1

@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public void TriggerLevelEnd(bool didWin)
+    public void TriggerLevelEnd(bool didWin, bool finalLevel)
     {
         if (hasTriggeredEnd) return;
 
@@ -117,6 +117,11 @@ public class GameManager : MonoBehaviour {
         {
             System.TimeSpan duration = new System.TimeSpan(0, 0, 0, (int)levelTime, (int)(levelTime * 100 - ((int)levelTime)));
             timeText.text += duration.ToString().Substring(3, 8);
+        }
+
+        if(finalLevel == true)
+        {
+
         }
     }
 
