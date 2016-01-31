@@ -7,6 +7,7 @@ public class Goat : Animal {
 
     protected override void Activated()
     {
+        if (gameObject.GetComponent<AudioSource>().isPlaying) gameObject.GetComponent<AudioSource>().Stop();
         gameObject.GetComponent<AudioSource>().PlayOneShot(activatedSounds[Random.Range(0, activatedSounds.Length)]);
 
         float sign = Mathf.Sign(transform.localScale.x);
@@ -24,7 +25,7 @@ public class Goat : Animal {
     }
     protected override void OnSeated()
     {
-        base.OnSeated();
+        if (gameObject.GetComponent<AudioSource>().isPlaying) gameObject.GetComponent<AudioSource>().Stop();
         gameObject.GetComponent<AudioSource>().PlayOneShot(seatedSounds[Random.Range(0, seatedSounds.Length)]);
     }
 }

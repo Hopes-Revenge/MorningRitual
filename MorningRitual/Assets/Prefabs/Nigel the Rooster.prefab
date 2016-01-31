@@ -44,6 +44,7 @@ GameObject:
   - 58: {fileID: 5851494}
   - 95: {fileID: 9592686}
   - 61: {fileID: 6101160}
+  - 82: {fileID: 8232004}
   m_Layer: 8
   m_Name: Nigel the Rooster
   m_TagString: Player
@@ -162,6 +163,80 @@ BoxCollider2D:
   m_Offset: {x: 0.0041177273, y: 0.113628626}
   serializedVersion: 2
   m_Size: {x: 0.85176414, y: 0.7727426}
+--- !u!82 &8232004
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125186}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &9592686
 Animator:
   serializedVersion: 3
@@ -204,6 +279,15 @@ MonoBehaviour:
   resetLevel: 0
   dead: 0
   rdBody: {fileID: 5063122}
+  squakSounds:
+  - {fileID: 8300000, guid: ea6c4434a00d1fe499af3ce673a92e7a, type: 3}
+  - {fileID: 8300000, guid: 9cbfd6209c837d24ebfb700825f44177, type: 3}
+  - {fileID: 8300000, guid: fcf779a92616c5646b70823aa7f05a8c, type: 3}
+  deathSounds:
+  - {fileID: 8300000, guid: 66cc6610b24767c42880689365fcda9f, type: 3}
+  - {fileID: 8300000, guid: 8d2e27cdb6bdbdf4b90ed1699e665711, type: 3}
+  - {fileID: 8300000, guid: 808eb94d9be67d04e9490f852398de50, type: 3}
+  crow: {fileID: 0}
 --- !u!212 &21261850
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -240,7 +324,31 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: deathSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: squakSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: panLevelCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 125186}
