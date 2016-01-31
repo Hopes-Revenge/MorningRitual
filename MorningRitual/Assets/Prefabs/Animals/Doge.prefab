@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 412250}
   - 212: {fileID: 21214654}
   m_Layer: 13
-  m_Name: LamaBody
+  m_Name: Graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.89, z: 0}
+  m_LocalPosition: {x: -0.015, y: 0.79, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 457240}
@@ -82,8 +82,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.686, y: -0.269, z: 0}
-  m_LocalScale: {x: 0.6110761, y: 0.6110761, z: 0.6110761}
+  m_LocalPosition: {x: 10.313764, y: 1.9800817, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412250}
   - {fileID: 410734}
@@ -117,9 +117,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0.3952835, y: 0.68534714}
+  m_Offset: {x: 0.028856369, y: 0.005345412}
   serializedVersion: 2
-  m_Size: {x: 0.605825, y: 0.32586434}
+  m_Size: {x: 0.5353595, y: 0.37519133}
 --- !u!61 &6161190
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -131,9 +131,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.08515243, y: -0.19353041}
+  m_Offset: {x: 0.0029308957, y: -0.39083642}
   serializedVersion: 2
-  m_Size: {x: 1.665746, y: 1.3870608}
+  m_Size: {x: 1.6305099, y: 0.6542097}
 --- !u!114 &11432686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -196,7 +196,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 32b816c2510394c4099c1c4816dc611f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3ebf6a4a73d1dad4294a298d758933be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

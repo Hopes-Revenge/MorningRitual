@@ -4,22 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-  - enabled: 1
-    path: Assets/Scenes/BasicTutorial.unity
-  - enabled: 1
-    path: Assets/Scenes/Dog Tutorial.unity
-  - enabled: 1
-    path: Assets/Scenes/GoatTutorial.unity
-  - enabled: 1
-    path: Assets/Scenes/LlamaTut.unity
-  - enabled: 1
-    path: Assets/Scenes/Chris Level.unity
-  - enabled: 1
-    path: Assets/Scenes/parallax test.unity
-  - enabled: 0
-    path: Assets/Scenes/JeremyScene.unity
-  - enabled: 1
-    path: Assets/Scenes/afl4947Dev.unity
+  m_Scenes: []
