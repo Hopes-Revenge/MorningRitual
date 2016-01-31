@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 462680}
   - 212: {fileID: 21205676}
   - 61: {fileID: 6193098}
-  - 61: {fileID: 6135690}
   - 251: {fileID: 25199004}
   m_Layer: 11
   m_Name: LamaHead
@@ -119,7 +118,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.525027, y: -0.55, z: 0}
+  m_LocalPosition: {x: -0.23009443, y: -1.1596012, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 414886}
@@ -184,24 +183,10 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -0.40718913, y: 0.35250273}
-      - {x: 0.65734625, y: 0.3490683}
-      - {x: 0.67456317, y: -0.8624189}
+      - {x: 0.73875, y: 0.32764626}
+      - {x: 0.7002697, y: -0.8538501}
       - {x: -0.6745635, y: -0.869094}
       - {x: -0.86427844, y: -0.118197605}
---- !u!61 &6135690
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117074}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
-  m_Offset: {x: 0.082977, y: -0.12106502}
-  serializedVersion: 2
-  m_Size: {x: 0.60007715, y: 0.25786966}
 --- !u!61 &6166430
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -227,9 +212,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 1
-  m_Offset: {x: 0.082977, y: -0.12106502}
+  m_Offset: {x: 0.082977, y: -0.27686918}
   serializedVersion: 2
-  m_Size: {x: 0.60007715, y: 0.25786966}
+  m_Size: {x: 0.60007715, y: 0.263309}
 --- !u!82 &8202240
 AudioSource:
   m_ObjectHideFlags: 1

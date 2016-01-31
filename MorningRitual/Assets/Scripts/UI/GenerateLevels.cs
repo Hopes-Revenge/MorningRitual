@@ -27,12 +27,13 @@ public class GenerateLevels : MonoBehaviour {
                 //Check if egg was found
                 if(PlayerPrefs.HasKey("Egg " + i))
                 {
-                    sceneButton.transform.GetChild(1).GetComponent<Image>().enabled = true;
+                    sceneButton.transform.GetChild(2).GetComponent<Image>().enabled = true;
                 }
             }
             else
             {
                 sceneButton.GetComponent<Button>().interactable = false;
+                sceneButton.transform.GetChild(1).GetComponent<Image>().enabled = true;
             }
             
         }
