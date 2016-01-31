@@ -19,7 +19,7 @@ public class CloudScript : MonoBehaviour {
         {
             if(child.position.x - transform.position.x < -20.0f)
             {
-                child.position = new Vector2(Random.Range(20.0f, 100.0f), Random.Range(-20.0f, 20.0f));
+                child.position = new Vector2(Random.Range(transform.position.x + 20.0f, transform.position.x + 40.0f), Random.Range(transform.position.y + -10.0f, transform.position.y + 10.0f));
             }
             else
             {
