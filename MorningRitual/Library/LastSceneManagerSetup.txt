@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/WaterLevel.unity
-=======
-- path: Assets/Scenes/Chris Level-3.unity
->>>>>>> 7a9c5ef4467767800c75c1d100f6b8f63efb25d2
+- path: Assets/Scenes/LlamaTut.unity
   isLoaded: 1
   isActive: 1

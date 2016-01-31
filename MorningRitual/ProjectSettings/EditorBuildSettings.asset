@@ -15,3 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/parallax test.unity
   - enabled: 1
     path: Assets/Scenes/Chris Level.unity
+  - enabled: 1
+    path: Assets/Scenes/Dog Tutorial.unity
+  - enabled: 1
+    path: Assets/Scenes/GoatTutorial.unity
