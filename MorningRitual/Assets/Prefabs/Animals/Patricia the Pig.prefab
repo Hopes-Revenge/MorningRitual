@@ -28,6 +28,7 @@ GameObject:
   - 61: {fileID: 6108268}
   - 114: {fileID: 11499662}
   - 60: {fileID: 6020254}
+  - 82: {fileID: 8237000}
   m_Layer: 10
   m_Name: Patricia the Pig
   m_TagString: Untagged
@@ -110,6 +111,80 @@ BoxCollider2D:
   m_Offset: {x: 0.11802673, y: 0.19632053}
   serializedVersion: 2
   m_Size: {x: 1.3244156, y: 0.5300105}
+--- !u!82 &8237000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165722}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &11499662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,6 +198,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sinkScale: 1
   raiseScale: 0.2
+  jumpSounds:
+  - {fileID: 8300000, guid: d87105f1d733c7f47980a425400b5f4e, type: 3}
+  - {fileID: 8300000, guid: face8da04bca50740a58104e70c83c1f, type: 3}
+  - {fileID: 8300000, guid: 395cf56e77357bb409361738031553e3, type: 3}
+  - {fileID: 8300000, guid: d0f7918678972ca40bdf036db72408b4, type: 3}
+  - {fileID: 8300000, guid: 9455c0acb98da384da66f89e96ede68b, type: 3}
+  - {fileID: 8300000, guid: e1a94c4e083d0a54aa7d0492bcc9d9cf, type: 3}
 --- !u!212 &21244548
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -161,6 +243,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: jumpSounds.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: sinkScale
       value: 1
       objectReference: {fileID: 0}
@@ -168,6 +254,18 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 5288abdd0e94d1e4ab19639537ec52cd, type: 2}
+    - target: {fileID: 0}
+      propertyPath: panLevelCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165722}
