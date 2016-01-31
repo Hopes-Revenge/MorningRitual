@@ -44,7 +44,7 @@ GameObject:
   - 58: {fileID: 5851494}
   - 95: {fileID: 9592686}
   - 61: {fileID: 6101160}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Nigel the Rooster
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.018982649, y: 0.05899954, z: 0}
+  m_LocalPosition: {x: 1.1419291, y: 0.043052197, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 462008}
@@ -199,7 +199,7 @@ MonoBehaviour:
   groundRadius: 0.1
   groundObject:
     serializedVersion: 2
-    m_Bits: 3328
+    m_Bits: 3584
   resetPosition: {x: 0.214, y: 0.134, z: 0}
   resetLevel: 0
   dead: 0

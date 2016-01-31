@@ -29,6 +29,7 @@ GameObject:
   - 114: {fileID: 11481520}
   - 61: {fileID: 6105308}
   - 95: {fileID: 9508948}
+  - 82: {fileID: 8239844}
   m_Layer: 10
   m_Name: Sanchez the Sheep
   m_TagString: Untagged
@@ -43,7 +44,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.8, y: 0.06046152, z: 0}
+  m_LocalPosition: {x: 37.83, y: 0.06046152, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 466858}
@@ -109,9 +110,83 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: -0.08326626, y: 0.047099352}
+  m_Offset: {x: -0.13653564, y: 0.025458515}
   serializedVersion: 2
-  m_Size: {x: 1.4639163, y: 0.070604295}
+  m_Size: {x: 1.1775873, y: 0.02732262}
+--- !u!82 &8239844
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159034}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &9508948
 Animator:
   serializedVersion: 3
@@ -142,7 +217,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bounceForce: 400
   animator: {fileID: 9508948}
-  jumpSounds: []
+  jumpSounds:
+  - {fileID: 8300000, guid: ae7311133eeabcc4292f35f4bea47218, type: 3}
+  - {fileID: 8300000, guid: 2f610e360dcea97449ae42d6f96ce6e1, type: 3}
+  - {fileID: 8300000, guid: 9a2abde31e3ce324da2dfdf6f1f74f64, type: 3}
+  - {fileID: 8300000, guid: 080ef9bab8ab13848a9b91b0d5e06ed8, type: 3}
+  - {fileID: 8300000, guid: e0668faeca758e24b868541ccb72fdb2, type: 3}
+  - {fileID: 8300000, guid: e8241feb7b3b3534bb81b6409e619dfa, type: 3}
+  - {fileID: 8300000, guid: 64b5dceea81196349853e83fc52c5ae3, type: 3}
+  - {fileID: 8300000, guid: 11082ae4a41d91143b5e4a4b23d46f6a, type: 3}
 --- !u!212 &21281750
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -181,8 +264,20 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: jumpSounds.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: panLevelCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
