@@ -3,6 +3,8 @@ using System.Collections;
 
 public class CloudScript : MonoBehaviour {
 
+    private float cloudSpeed = 0.01f;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -21,7 +23,7 @@ public class CloudScript : MonoBehaviour {
             }
             else
             {
-
+                child.position = new Vector2(child.position.x - cloudSpeed, child.position.y);
             }
         }
 	}

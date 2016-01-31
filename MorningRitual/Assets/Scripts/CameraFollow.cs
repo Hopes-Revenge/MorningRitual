@@ -39,7 +39,8 @@ public class CameraFollow : MonoBehaviour {
         pos.x = Mathf.Lerp(transform.position.x, followTransform.position.x, Time.fixedDeltaTime * applySpeed);
         if (Mathf.Abs(followTransform.position.y - transform.position.y + yHeight) > ySnap)
         {
-            pos.y = Mathf.Lerp(transform.position.y, followTransform.position.y + ySnap, Time.fixedDeltaTime * Mathf.Abs(followTransform.position.y - transform.position.y + yHeight));
+            float y = followTransform.position.y;
+            //pos.y = Mathf.Lerp(transform.position.y, y + ySnap, Time.fixedDeltaTime * Mathf.Abs(y - transform.position.y + yHeight));
         }
         else
         {
