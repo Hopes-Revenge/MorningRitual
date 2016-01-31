@@ -42,9 +42,13 @@ MonoBehaviour:
   canvas: {fileID: 22386052, guid: 89a15f8f724da3742a84d697a94c1141, type: 2}
   levelWinScreen: {fileID: 11430802, guid: 25c1761c8d3ddc24887de7081e53c9ab, type: 2}
   levelRepeatScreen: {fileID: 11461036, guid: 6df11c03f471d114fb9833808bd9b27f, type: 2}
+  levelPauseScreen: {fileID: 11461036, guid: 176afa8b650e575429bcd7e81d23967f, type: 2}
   instatiate:
   - {fileID: 143538, guid: da254408fd8c1674aa3a5c162a98da3a, type: 2}
   - {fileID: 180710, guid: 5deed6ff0add79b49a6a94763a46d946, type: 2}
+  foundEgg: 0
+  min: {x: 0, y: 0}
+  max: {x: 0, y: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -64,6 +68,11 @@ Prefab:
       propertyPath: instatiate.Array.data[1]
       value: 
       objectReference: {fileID: 180710, guid: 5deed6ff0add79b49a6a94763a46d946, type: 2}
+    - target: {fileID: 0}
+      propertyPath: levelPauseScreen
+      value: 
+      objectReference: {fileID: 11461036, guid: 176afa8b650e575429bcd7e81d23967f,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 196370}
