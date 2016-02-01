@@ -118,7 +118,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.23009443, y: -1.1596012, z: 0}
+  m_LocalPosition: {x: 133.38638, y: 27.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 414886}
@@ -186,7 +186,7 @@ PolygonCollider2D:
       - {x: 0.73875, y: 0.32764626}
       - {x: 0.7002697, y: -0.8538501}
       - {x: -0.6745635, y: -0.869094}
-      - {x: -0.86427844, y: -0.118197605}
+      - {x: -0.8059082, y: -0.11289215}
 --- !u!61 &6166430
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -198,9 +198,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0.56932926, y: 1.6569948}
+  m_Offset: {x: 0.5236273, y: 1.2334895}
   serializedVersion: 2
-  m_Size: {x: 0.25773335, y: 0.24556148}
+  m_Size: {x: 0.3491373, y: 0.19071913}
 --- !u!61 &6193098
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatTransform: {fileID: 456868}
-  jumpOffForce: 2
+  jumpOffAddY: 0.2
   seatedSounds:
   - {fileID: 8300000, guid: 607fa49eb9a783f46a9aec4cc936394b, type: 3}
   - {fileID: 8300000, guid: d977786e80b21a949959e7179559250c, type: 3}

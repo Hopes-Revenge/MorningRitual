@@ -9,7 +9,7 @@ public class Animal : MonoBehaviour {
     public Transform seatTransform;
 
     [Header("Configure")]
-    public float jumpOffForce = 1;
+    public float jumpOffAddY = 0.2f;
 
     protected bool isSeated = false;
     private Transform playerTransform;
@@ -64,7 +64,7 @@ public class Animal : MonoBehaviour {
 
     void LateUpdate()
     {
-        if (isSeated)
+		if (isSeated && playerTransform != null)
         {
             playerTransform.position = seatTransform.position;
             Vector3 scale = playerTransform.localScale;
@@ -122,11 +122,11 @@ public class Animal : MonoBehaviour {
 
         animalController.enabled = false;
         playerController.enabled = true;
-        Rigidbody2D playerBody = playerTransform.GetComponent<Rigidbody2D>();
-        if(playerBody)
-        {
-            playerBody.AddForce(Vector2.up * jumpOffForce, ForceMode2D.Impulse);
-        }
+        
+		Vector3 playerPos = playerTransform.position;
+		playerPos.y += jumpOffAddY;
+		playerTransform.position = playerPos;
+
         OnUnSeated();
     }
 

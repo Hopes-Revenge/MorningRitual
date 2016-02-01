@@ -60,7 +60,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.756, y: -2.1, z: 0}
+  m_LocalPosition: {x: 28.676367, y: 7.038548, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 464676}
@@ -122,11 +122,11 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: -0.63358307, y: 0.048041582}
+    - - {x: -0.5439453, y: 0.008202076}
       - {x: 0.8572503, y: 0.021095335}
       - {x: 0.8220926, y: -0.95185626}
       - {x: -0.6426039, y: -0.9702147}
-      - {x: -0.9033121, y: -0.12600446}
+      - {x: -0.80869293, y: -0.29532242}
 --- !u!61 &6102190
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatTransform: {fileID: 464676}
-  jumpOffForce: 4
+  jumpOffAddY: 0.2
   seatedSounds:
   - {fileID: 8300000, guid: ea287f34e6576d84db21775cd03a3ef3, type: 3}
   - {fileID: 8300000, guid: 0a1e2667f85d3724cb7cc649efd95fe0, type: 3}
@@ -289,6 +289,9 @@ MonoBehaviour:
   resetLevel: 0
   dead: 0
   rdBody: {fileID: 5016630}
+  squakSounds: []
+  deathSounds: []
+  crow: {fileID: 0}
 --- !u!212 &21283770
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -3210,50 +3210,25 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 446024, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 6193098, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
+    - target: {fileID: 6166430, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
       propertyPath: m_Offset.y
-      value: -0.27686918
+      value: 1.2334895
       objectReference: {fileID: 0}
-    - target: {fileID: 6193098, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
+    - target: {fileID: 6166430, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
       propertyPath: m_Size.y
-      value: 0.263309
+      value: 0.19071913
       objectReference: {fileID: 0}
-    - target: {fileID: 6089220, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: 0.73875
+    - target: {fileID: 6166430, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
+      propertyPath: m_Offset.x
+      value: 0.5236273
       objectReference: {fileID: 0}
-    - target: {fileID: 6089220, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
-      value: 0.32764626
+    - target: {fileID: 6166430, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
+      propertyPath: m_Size.x
+      value: 0.3491373
       objectReference: {fileID: 0}
-    - target: {fileID: 6089220, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
-      value: 0.7002697
-      objectReference: {fileID: 0}
-    - target: {fileID: 6089220, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
-      value: -0.8538501
-      objectReference: {fileID: 0}
-    - target: {fileID: 456868, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.912
-      objectReference: {fileID: 0}
-    - target: {fileID: 11407318, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
-      propertyPath: jumpOffForce
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 25199004, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
-      propertyPath: m_SurfaceArc
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 25199004, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
-      propertyPath: m_UseOneWayGrouping
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6135690, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1609001501
