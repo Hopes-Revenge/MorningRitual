@@ -20,13 +20,13 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 2, y: 2, z: 2}
-        outSlope: {x: 2, y: 2, z: 2}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - time: 0.5
         value: {x: 1, y: 1, z: 1}
-        inSlope: {x: -1.4877044, y: -1.5079073, z: -1.4907801}
-        outSlope: {x: -1.4877044, y: -1.5079073, z: -1.4907801}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -34,7 +34,7 @@ AnimationClip:
     path: 
   m_FloatCurves: []
   m_PPtrCurves: []
-  m_SampleRate: 60
+  m_SampleRate: 30
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -74,13 +74,13 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 0
-        inSlope: 2
-        outSlope: 2
-        tangentMode: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
       - time: 0.5
         value: 1
-        inSlope: -1.4877044
-        outSlope: -1.4877044
+        inSlope: 0
+        outSlope: 0
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -94,13 +94,13 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 0
-        inSlope: 2
-        outSlope: 2
-        tangentMode: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
       - time: 0.5
         value: 1
-        inSlope: -1.5079073
-        outSlope: -1.5079073
+        inSlope: 0
+        outSlope: 0
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -114,13 +114,13 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 0
-        inSlope: 2
-        outSlope: 2
-        tangentMode: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
       - time: 0.5
         value: 1
-        inSlope: -1.4907801
-        outSlope: -1.4907801
+        inSlope: 0
+        outSlope: 0
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
