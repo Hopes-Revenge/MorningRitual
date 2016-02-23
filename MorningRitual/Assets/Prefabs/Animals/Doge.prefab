@@ -85,7 +85,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.63, y: -0.3, z: 0}
+  m_LocalPosition: {x: 83.65853, y: 20.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412250}
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatTransform: {fileID: 410734}
-  jumpOffAddY: 0.2
+  jumpOffAddY: 0
   seatedSounds:
   - {fileID: 8300000, guid: 9c96ed9393e0e3146a2044edac0228ed, type: 3}
   - {fileID: 8300000, guid: 9d583dca24a6ada48bd55f253cd208da, type: 3}

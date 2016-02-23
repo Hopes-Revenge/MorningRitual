@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Final level.unity
+- path: Assets/Scenes/Chris Level-6.unity
   isLoaded: 1
   isActive: 1

@@ -5068,7 +5068,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480802, guid: c4020b5a12f3cae49a3effc2e01ec1a2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.25
+      value: 1.33
       objectReference: {fileID: 0}
     - target: {fileID: 480802, guid: c4020b5a12f3cae49a3effc2e01ec1a2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5092,7 +5092,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480802, guid: c4020b5a12f3cae49a3effc2e01ec1a2, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4020b5a12f3cae49a3effc2e01ec1a2, type: 2}
@@ -5660,6 +5660,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 21268184, guid: ef435a949072cae41bea7ce4cc0cfbda, type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef435a949072cae41bea7ce4cc0cfbda, type: 2}
   m_IsPrefabParent: 0
@@ -5928,7 +5932,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 489576, guid: ef435a949072cae41bea7ce4cc0cfbda, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.67
+      value: -1.14
       objectReference: {fileID: 0}
     - target: {fileID: 489576, guid: ef435a949072cae41bea7ce4cc0cfbda, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5952,11 +5956,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 489576, guid: ef435a949072cae41bea7ce4cc0cfbda, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 115404, guid: ef435a949072cae41bea7ce4cc0cfbda, type: 2}
       propertyPath: m_Name
       value: Garbage (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21268184, guid: ef435a949072cae41bea7ce4cc0cfbda, type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef435a949072cae41bea7ce4cc0cfbda, type: 2}

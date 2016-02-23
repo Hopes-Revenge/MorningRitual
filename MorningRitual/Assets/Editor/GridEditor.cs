@@ -44,7 +44,7 @@ public class GridEditor : Editor
                         DestroyImmediate(blocks[i]);
                         blocks.RemoveAt(i);
                     }
-                    Debug.Log("aligned=" + aligned + " Block Position=" + blocks[i].transform.position);
+                    //Debug.Log("aligned=" + aligned + " Block Position=" + blocks[i].transform.position);
                 }
                 obj.transform.position = aligned;
                 obj.transform.SetParent(GameObject.Find("Grid").transform);
@@ -64,14 +64,14 @@ public class GridEditor : Editor
                             if (grassBlocks[j].transform.position == down) blockOrientation -= 2;
                             if (grassBlocks[j].transform.position == left) blockOrientation -= 4;
                             if (grassBlocks[j].transform.position == right) blockOrientation -= 8;
-                            Debug.Log(" Block Orientation=" + blockOrientation);
+                            //Debug.Log(" Block Orientation=" + blockOrientation);
                         }
-                        Debug.Log(" Block sprite=" + i + " grassSprite= " + blockOrientation);
-                        Debug.Log(" Blocks=" + grassBlocks.Count + " grass= " + grassSprites.Length);
+                        //Debug.Log(" Block sprite=" + i + " grassSprite= " + blockOrientation);
+                        //Debug.Log(" Blocks=" + grassBlocks.Count + " grass= " + grassSprites.Length);
                         grassBlocks[i].GetComponent<SpriteRenderer>().sprite = grassSprites[blockOrientation];
                     }
                 }
-                Undo.RegisterCreatedObjectUndo(obj, "Create " + obj.name);
+                //Undo.RegisterCreatedObjectUndo(obj, "Create " + obj.name);
             }
         }
     }
