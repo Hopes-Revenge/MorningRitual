@@ -3957,6 +3957,14 @@ Prefab:
       propertyPath: neckTransform
       value: 
       objectReference: {fileID: 156791731}
+    - target: {fileID: 6193098, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
+      propertyPath: m_Offset.x
+      value: -0.009818375
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193098, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
+      propertyPath: m_Size.x
+      value: 0.41448748
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4d19c427da6280418a1c9cee0df2ccf, type: 2}
   m_IsPrefabParent: 0

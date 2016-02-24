@@ -85,9 +85,9 @@ public class GameManager : MonoBehaviour {
         levelTime += Time.deltaTime;
         CheckInput();
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
-            levelPauseScreen.IsVisible = true;
+            levelPauseScreen.IsVisible = !levelPauseScreen.IsVisible;
         }
     }
 
@@ -121,6 +121,10 @@ public class GameManager : MonoBehaviour {
             if (finalLevel == true)
             {
                 player.GetComponent<AudioSource>().PlayOneShot(player.GetComponent<PlayerController1>().crow);
+                if (foundEgg)
+                {
+                    PlayerPrefs.SetInt("Egg " + UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex, 1);
+                }
                 if (gameWonScreen != null)
                 {
                     gameWonScreen.IsVisible = true;

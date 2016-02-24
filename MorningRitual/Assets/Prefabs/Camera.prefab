@@ -553,8 +553,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4975a6e437fc3b149a8cd508ce5bdd69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: 0.5
-  intensity: 0.3
+  threshold: 0.45
+  intensity: 0.4
   blurSize: 1
   blurIterations: 1
   blurType: 0
@@ -810,6 +810,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: maxX
       value: -3.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: intensity
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: threshold
+      value: 0.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
